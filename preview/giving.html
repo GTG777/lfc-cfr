@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LFC-CFR Online Giving Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Lora:ital,wght@1,400&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#1f1a22",
+                        "on-surface-variant": "#4c4452",
+                        "surface-container-high": "#efe5f1",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#feb63c",
+                        "primary-fixed": "#f1dbff",
+                        "secondary-fixed": "#ffddb0",
+                        "surface-dim": "#e1d7e2",
+                        "outline": "#7e7383",
+                        "on-tertiary-fixed-variant": "#673d00",
+                        "tertiary": "#4e2d00",
+                        "palette-c-amber": "#D97706",
+                        "on-primary-fixed": "#2d0050",
+                        "palette-b-champagne": "#B8963E",
+                        "on-tertiary-container": "#eeaf68",
+                        "surface-variant": "#e9dfeb",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#661aa3",
+                        "inverse-primary": "#dfb7ff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e9dfeb",
+                        "palette-a-purple": "#6B21A8",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#fbf0fc",
+                        "primary-container": "#6b21a8",
+                        "primary": "#500088",
+                        "tertiary-container": "#6d4100",
+                        "on-primary-container": "#d7a8ff",
+                        "tertiary-fixed-dim": "#faba72",
+                        "palette-d-emerald": "#14532D",
+                        "surface-tint": "#803abd",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#fff7fe",
+                        "on-tertiary-fixed": "#2b1700",
+                        "on-secondary-fixed-variant": "#614000",
+                        "on-secondary-fixed": "#281800",
+                        "inverse-surface": "#342e37",
+                        "background": "#fff7fe",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#f5ebf6",
+                        "primary-fixed-dim": "#dfb7ff",
+                        "palette-a-gold": "#CA8A04",
+                        "error": "#ba1a1a",
+                        "secondary": "#805600",
+                        "tertiary-fixed": "#ffddbb",
+                        "outline-variant": "#cfc2d4",
+                        "surface-bright": "#fff7fe",
+                        "palette-b-crimson": "#7F1D1D",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#ffba46",
+                        "inverse-on-surface": "#f8edf9",
+                        "palette-d-gold": "#CA8A04",
+                        "palette-c-navy": "#0F172A",
+                        "on-background": "#1f1a22",
+                        "on-secondary-container": "#6e4900"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "space-8": "32px",
+                        "space-20": "80px",
+                        "space-16": "64px",
+                        "space-12": "48px",
+                        "space-1": "4px",
+                        "space-32": "128px",
+                        "space-2": "8px",
+                        "space-3": "12px",
+                        "space-24": "96px",
+                        "space-4": "16px",
+                        "space-6": "24px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "display-xl": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "body-lead": ["Inter"],
+                        "body-base": ["Inter"],
+                        "headline-h5": ["Inter"],
+                        "headline-h1": ["Playfair Display"],
+                        "caption": ["Inter"],
+                        "headline-h3": ["Playfair Display"],
+                        "headline-h2": ["Playfair Display"],
+                        "scripture-quote": ["Lora"],
+                        "headline-h4": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                        "body-sm": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "400" }],
+                        "display-xl": ["4.5rem", { "lineHeight": "4.75rem", "fontWeight": "700" }],
+                        "display-lg": ["3.75rem", { "lineHeight": "4rem", "fontWeight": "700" }],
+                        "body-lead": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }],
+                        "body-base": ["1rem", { "lineHeight": "1.75rem", "fontWeight": "400" }],
+                        "headline-h5": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }],
+                        "headline-h1": ["3rem", { "lineHeight": "3.25rem", "fontWeight": "700" }],
+                        "caption": ["0.75rem", { "lineHeight": "1rem", "fontWeight": "400" }],
+                        "headline-h3": ["1.875rem", { "lineHeight": "2.25rem", "fontWeight": "700" }],
+                        "headline-h2": ["2.25rem", { "lineHeight": "2.5rem", "fontWeight": "700" }],
+                        "scripture-quote": ["1.5rem", { "lineHeight": "2rem", "fontWeight": "400" }],
+                        "headline-h4": ["1.5rem", { "lineHeight": "2rem", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); }
+        .hero-overlay { background: linear-gradient(to right, rgba(80, 0, 136, 0.85), rgba(107, 33, 168, 0.75)); }
+        .scripture-block { border-left: 3px solid var(--color-palette-a-gold, #CA8A04); background-color: rgba(255, 247, 254, 0.8); }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-base antialiased min-h-screen flex flex-col">
+<!-- Top Navigation -->
+<nav class="bg-surface dark:bg-on-surface w-full top-0 sticky border-b border-outline-variant dark:border-outline shadow-sm z-50">
+<div class="flex justify-between items-center w-full px-6 md:px-16 max-w-[1280px] mx-auto h-20">
+<div class="text-headline-h4 font-headline-h3 text-primary dark:text-primary-fixed tracking-tight">
+                LFC-CFR
+            </div>
+<div class="hidden md:flex space-x-8">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary-container transition-colors duration-200 font-headline-h4 text-headline-h4" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary-container transition-colors duration-200 font-headline-h4 text-headline-h4" href="#">Ministries</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary-container transition-colors duration-200 font-headline-h4 text-headline-h4" href="#">Events</a>
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-secondary font-headline-h4 text-headline-h4" href="#">Give</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary-container transition-colors duration-200 font-headline-h4 text-headline-h4" href="#">About</a>
+</div>
+<div>
+<a class="font-headline-h4 text-headline-h4 text-primary dark:text-primary-fixed hover:text-secondary-container transition-colors duration-200 hidden md:block" href="#">Login</a>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full h-[460px] min-h-[400px] flex items-center justify-center overflow-hidden bg-primary" data-alt="A softly lit, blurred background of a modern church sanctuary with gentle, warm lighting. The image features a shallow depth of field, focusing on the atmosphere of reverence and community. Light streams through stained glass or high windows, creating an inspiring and peaceful mood. The overall color palette leans towards rich, regal purples and warm gold highlights." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCa1FC5i3Nj43HhIxQO7dY_MU5QgghXUi6vimem-Pua0Q5ClngKTpK1iCz7pLMn4HaBYm0ls6i5_smwNfV_gebQ3M8pTWHwlY_4Mv133cIQDzz2nevct8gHDcZVOtFjrhYrL1u80Mb-sBiQwrPEyW6cr8Y9DBbz1seko7kEtQ3Oqn9CsmPh1rURjPPV_1KZjbKeX-BXlgTKxG6h-M4kl_m3avcSnRC-ZLW7NJEOkbChLm86iyQoMbICKs5WLFLsvKHORHlumssAuDLR'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 hero-overlay"></div>
+<div class="relative z-10 text-center px-space-6 max-w-[1280px] mx-auto flex flex-col items-center">
+<h1 class="font-headline-h1 text-headline-h1 text-on-primary mb-space-4">Give to the Kingdom Work</h1>
+<p class="font-body-lead text-body-lead text-primary-fixed-dim max-w-2xl mx-auto">
+                Your generosity fuels ministry, outreach, and community transformation.
+            </p>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Scripture Section -->
+<section class="py-space-16 md:py-space-24 px-space-6 max-w-[1280px] mx-auto">
+<div class="scripture-block p-space-6 md:p-space-8 rounded-r-lg max-w-4xl mx-auto shadow-sm">
+<p class="font-scripture-quote text-scripture-quote text-on-surface-variant italic text-center md:text-left">
+                    "Bring the whole tithe into the storehouse... and see if I will not throw open the floodgates of heaven." 
+                    <span class="block mt-space-2 font-body-base text-body-base text-secondary font-semibold not-italic">- Malachi 3:10</span>
+</p>
+</div>
+</section>
+<!-- Giving Methods Section -->
+<section class="py-space-16 md:py-space-24 bg-surface-container-lowest px-space-6">
+<div class="max-w-[1280px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-8">
+<!-- Card 1: Online -->
+<div class="bg-surface border border-outline-variant p-space-8 rounded-xl hover-lift flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-space-6">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">credit_card</span>
+</div>
+<h3 class="font-headline-h3 text-headline-h3 text-on-surface mb-space-4">GIVE ONLINE</h3>
+<p class="font-body-base text-body-base text-on-surface-variant mb-space-8 flex-grow">
+                            Securely give online via our giving portal. One-time or recurring giving available.
+                        </p>
+<a class="inline-block bg-palette-a-gold text-white font-label-caps text-label-caps uppercase tracking-wider py-3 px-8 rounded hover:bg-secondary transition-colors w-full" href="#">GIVE NOW</a>
+</div>
+<!-- Card 2: Cash App -->
+<div class="bg-surface border border-outline-variant p-space-8 rounded-xl hover-lift flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-space-6">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">smartphone</span>
+</div>
+<h3 class="font-headline-h3 text-headline-h3 text-on-surface mb-space-4">CASH APP</h3>
+<div class="font-headline-h2 text-headline-h2 text-palette-d-emerald mb-space-4">$LFCCFR</div>
+<p class="font-body-base text-body-base text-on-surface-variant mb-space-8 flex-grow">
+                            Send your gift directly via Cash App. Search $LFCCFR.
+                        </p>
+</div>
+<!-- Card 3: Mail -->
+<div class="bg-surface border border-outline-variant p-space-8 rounded-xl hover-lift flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-space-6">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">mail</span>
+</div>
+<h3 class="font-headline-h3 text-headline-h3 text-on-surface mb-space-4">MAIL A CHECK</h3>
+<p class="font-body-base text-body-base text-on-surface-variant mb-space-8 flex-grow">
+                            Make checks payable to LFC-CFR.<br/>Mail to:<br/>5252 Olde Towne Rd., Suite C,<br/>Williamsburg, VA 23188
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why We Give Section -->
+<section class="py-space-16 md:py-space-24 bg-surface-container px-space-6">
+<div class="max-w-[1280px] mx-auto">
+<h2 class="font-headline-h2 text-headline-h2 text-on-surface mb-space-12 text-center">Why We Give</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-8">
+<div class="flex flex-col items-center text-center">
+<div class="mb-space-4 text-primary">
+<span class="material-symbols-outlined text-5xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<h4 class="font-headline-h4 text-headline-h4 text-on-surface mb-space-2">Tithes &amp; Offerings</h4>
+<p class="font-body-base text-body-base text-on-surface-variant">
+                            Honor God with the first fruits of your increase. Tithing is an act of trust and worship.
+                        </p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="mb-space-4 text-primary">
+<span class="material-symbols-outlined text-5xl" style="font-variation-settings: 'FILL' 1;">public</span>
+</div>
+<h4 class="font-headline-h4 text-headline-h4 text-on-surface mb-space-2">Outreach &amp; Missions</h4>
+<p class="font-body-base text-body-base text-on-surface-variant">
+                            Your gifts reach beyond our walls into the community, funding outreach programs and mercy ministry.
+                        </p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="mb-space-4 text-primary">
+<span class="material-symbols-outlined text-5xl" style="font-variation-settings: 'FILL' 1;">foundation</span>
+</div>
+<h4 class="font-headline-h4 text-headline-h4 text-on-surface mb-space-2">Ministry Operations</h4>
+<p class="font-body-base text-body-base text-on-surface-variant">
+                            Supporting the infrastructure that makes discipleship, teaching, and community transformation possible.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact Section -->
+<section class="py-space-16 md:py-space-24 bg-primary text-on-primary text-center px-space-6 relative overflow-hidden">
+<div class="max-w-[1280px] mx-auto relative z-10">
+<h2 class="font-headline-h2 text-headline-h2 mb-space-12">Your Gift Makes a Difference</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-8 mb-space-12">
+<div class="bg-on-primary-fixed/20 p-space-8 rounded-lg backdrop-blur-sm border border-primary-fixed/10">
+<div class="font-display-lg text-display-lg text-secondary-fixed mb-space-2">5k+</div>
+<div class="font-headline-h5 text-headline-h5 text-primary-fixed">Lives Touched</div>
+</div>
+<div class="bg-on-primary-fixed/20 p-space-8 rounded-lg backdrop-blur-sm border border-primary-fixed/10">
+<div class="font-display-lg text-display-lg text-secondary-fixed mb-space-2">2k+</div>
+<div class="font-headline-h5 text-headline-h5 text-primary-fixed">Families Served</div>
+</div>
+<div class="bg-on-primary-fixed/20 p-space-8 rounded-lg backdrop-blur-sm border border-primary-fixed/10">
+<div class="font-display-lg text-display-lg text-secondary-fixed mb-space-2">15</div>
+<div class="font-headline-h5 text-headline-h5 text-primary-fixed">Years of Ministry</div>
+</div>
+</div>
+<a class="inline-block bg-palette-a-gold text-white font-label-caps text-label-caps uppercase tracking-wider py-4 px-12 rounded hover:bg-secondary transition-colors shadow-lg" href="#">GIVE NOW</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-on-primary-fixed w-full mt-auto bg-primary dark:bg-on-primary-fixed flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 w-full px-8 md:px-32 py-16 max-w-[1280px] mx-auto">
+<div>
+<div class="text-headline-h5 font-headline-h5 text-secondary-fixed mb-space-4">LFC-CFR</div>
+<p class="text-on-primary-container dark:text-primary-fixed-dim font-body-sm text-body-sm">
+                    Â© 2024 LFC-CFR. All Rights Reserved. Built for Excellence.
+                </p>
+</div>
+<div class="flex flex-col space-y-space-2">
+<a class="text-on-primary-container dark:text-primary-fixed-dim font-body-sm text-body-sm hover:text-secondary-fixed-dim underline transition-all Hover: translate-x-1 duration-300" href="#">Privacy Policy</a>
+<a class="text-on-primary-container dark:text-primary-fixed-dim font-body-sm text-body-sm hover:text-secondary-fixed-dim underline transition-all Hover: translate-x-1 duration-300" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col space-y-space-2">
+<a class="text-on-primary-container dark:text-primary-fixed-dim font-body-sm text-body-sm hover:text-secondary-fixed-dim underline transition-all Hover: translate-x-1 duration-300" href="#">Contact Us</a>
+<a class="text-on-primary-container dark:text-primary-fixed-dim font-body-sm text-body-sm hover:text-secondary-fixed-dim underline transition-all Hover: translate-x-1 duration-300" href="#">Giving FAQ</a>
+</div>
+<div class="flex flex-col space-y-space-2">
+<a class="text-on-primary-container dark:text-primary-fixed-dim font-body-sm text-body-sm hover:text-secondary-fixed-dim underline transition-all Hover: translate-x-1 duration-300" href="#">Staff Portal</a>
+<a class="text-on-primary-container dark:text-primary-fixed-dim font-body-sm text-body-sm hover:text-secondary-fixed-dim underline transition-all Hover: translate-x-1 duration-300" href="#">Member Directory</a>
+</div>
+</div>
+</footer>
+</body></html>

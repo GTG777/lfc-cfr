@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Iaomai Wellness Initiative - LFC-CFR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Lora:ital@0;1&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#803abd",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "palette-d-emerald": "#14532D",
+                        "background": "#fff7fe",
+                        "surface": "#fff7fe",
+                        "on-primary-fixed-variant": "#661aa3",
+                        "on-surface": "#1f1a22",
+                        "palette-d-gold": "#CA8A04",
+                        "tertiary": "#4e2d00",
+                        "on-surface-variant": "#4c4452",
+                        "surface-container-high": "#efe5f1",
+                        "on-primary-container": "#d7a8ff",
+                        "on-primary": "#ffffff",
+                        "palette-b-crimson": "#7F1D1D",
+                        "palette-c-amber": "#D97706",
+                        "on-background": "#1f1a22",
+                        "surface-container-highest": "#e9dfeb",
+                        "tertiary-fixed": "#ffddbb",
+                        "secondary-fixed": "#ffddb0",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#6e4900",
+                        "on-secondary-fixed-variant": "#614000",
+                        "secondary-fixed-dim": "#ffba46",
+                        "outline": "#7e7383",
+                        "inverse-primary": "#dfb7ff",
+                        "on-primary-fixed": "#2d0050",
+                        "palette-c-navy": "#0F172A",
+                        "surface-bright": "#fff7fe",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#281800",
+                        "error-container": "#ffdad6",
+                        "secondary": "#805600",
+                        "primary-fixed": "#f1dbff",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e9dfeb",
+                        "secondary-container": "#feb63c",
+                        "surface-container-low": "#fbf0fc",
+                        "palette-a-purple": "#6B21A8",
+                        "surface-container": "#f5ebf6",
+                        "primary": "#500088",
+                        "outline-variant": "#cfc2d4",
+                        "palette-a-gold": "#CA8A04",
+                        "primary-container": "#6b21a8",
+                        "on-tertiary-fixed": "#2b1700",
+                        "surface-dim": "#e1d7e2",
+                        "inverse-surface": "#342e37",
+                        "tertiary-fixed-dim": "#faba72",
+                        "on-tertiary-fixed-variant": "#673d00",
+                        "palette-b-champagne": "#B8963E",
+                        "on-tertiary-container": "#eeaf68",
+                        "primary-fixed-dim": "#dfb7ff",
+                        "tertiary-container": "#6d4100",
+                        "inverse-on-surface": "#f8edf9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "space-32": "128px",
+                        "space-8": "32px",
+                        "space-20": "80px",
+                        "space-12": "48px",
+                        "space-4": "16px",
+                        "space-6": "24px",
+                        "space-2": "8px",
+                        "space-3": "12px",
+                        "space-1": "4px",
+                        "space-24": "96px",
+                        "space-16": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-h2": ["Playfair Display"],
+                        "display-xl": ["Playfair Display"],
+                        "caption": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-h3": ["Playfair Display"],
+                        "body-lead": ["Inter"],
+                        "headline-h4": ["Inter"],
+                        "scripture-quote": ["Lora"],
+                        "headline-h1": ["Playfair Display"],
+                        "body-base": ["Inter"],
+                        "headline-h5": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-h2": ["2.25rem", {"lineHeight": "2.5rem", "fontWeight": "700"}],
+                        "display-xl": ["4.5rem", {"lineHeight": "4.75rem", "fontWeight": "700"}],
+                        "caption": ["0.75rem", {"lineHeight": "1rem", "fontWeight": "400"}],
+                        "label-caps": ["0.75rem", {"lineHeight": "1rem", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                        "body-sm": ["0.875rem", {"lineHeight": "1.25rem", "fontWeight": "400"}],
+                        "display-lg": ["3.75rem", {"lineHeight": "4rem", "fontWeight": "700"}],
+                        "headline-h3": ["1.875rem", {"lineHeight": "2.25rem", "fontWeight": "700"}],
+                        "body-lead": ["1.125rem", {"lineHeight": "1.75rem", "fontWeight": "400"}],
+                        "headline-h4": ["1.5rem", {"lineHeight": "2rem", "fontWeight": "600"}],
+                        "scripture-quote": ["1.5rem", {"lineHeight": "2rem", "fontWeight": "400"}],
+                        "headline-h1": ["3rem", {"lineHeight": "3.25rem", "fontWeight": "700"}],
+                        "body-base": ["1rem", {"lineHeight": "1.75rem", "fontWeight": "400"}],
+                        "headline-h5": ["1.25rem", {"lineHeight": "1.75rem", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-base antialiased">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-surface/95 dark:bg-surface-dim/95 border-b border-outline-variant/30 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-space-8 py-space-4">
+<a class="font-headline-h4 text-headline-h4 text-primary dark:text-primary-fixed italic scale-95 active:scale-90 transition-transform" href="#">LFC-CFR</a>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex space-x-space-6">
+<li><a class="font-body-base text-body-base font-semibold tracking-wide text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Home</a></li>
+<li><a class="font-body-base text-body-base font-semibold tracking-wide text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">About</a></li>
+<li><a class="font-body-base text-body-base font-semibold tracking-wide text-primary dark:text-primary-fixed border-b-2 border-secondary hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Ministries</a></li>
+<li><a class="font-body-base text-body-base font-semibold tracking-wide text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Events</a></li>
+<li><a class="font-body-base text-body-base font-semibold tracking-wide text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Contact</a></li>
+</ul>
+<button class="bg-palette-a-gold text-on-primary font-label-caps text-label-caps uppercase tracking-widest px-8 py-3 rounded scale-95 active:scale-90 transition-transform hover:opacity-90">
+                GIVE
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative w-full h-[50vh] min-h-[400px] flex items-center justify-center bg-palette-a-purple overflow-hidden">
+<div class="absolute inset-0 bg-black/30 z-0"></div>
+<div class="relative z-10 text-center px-space-8 max-w-4xl mx-auto flex flex-col items-center">
+<img alt="" class="w-16 h-16 mb-space-6 opacity-90" src="https://lh3.googleusercontent.com/aida/AP1WRLsS5A9Fa2dbuvtkYQTjohkzScVo-terhioPbgWhvVwZsJk9gkCalKnGZldbwOe1SGaySqijOJjSVzaH0afcx0JuaBpiSCkIsF1xlI2yEtvbJt8vAHSvzhDbq0fjhtivf2GptkwW_WEC2a7S8el_aZdFW0z1NnJ_fG287GwAmSpoK3IONRhh_8sZa97pEUBo-mpV70Vs912JN_78TTijr5UISY7eG3QXcYOiEVR3kLopG2WWKBsAd2ISD6CW"/>
+<h1 class="font-headline-h1 text-headline-h1 text-white mb-space-4 drop-shadow-md">Iaomai Wellness Initiative</h1>
+<p class="font-body-lead text-body-lead text-primary-fixed-dim mb-space-8">Wholistic Health and Healing - Spirit, Soul, and Body</p>
+<blockquote class="font-scripture-quote text-scripture-quote text-palette-d-gold italic max-w-2xl px-space-6 border-l-3 border-palette-d-gold bg-black/10 py-space-4 rounded-r-lg">
+                "Beloved, I pray that you may prosper in all things and be in health, just as your soul prospers." <br/><span class="text-sm mt-2 block opacity-80">- 3 John 1:2</span>
+</blockquote>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-space-24 px-space-8 bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-space-12 items-center">
+<div class="space-y-space-6 pr-0 lg:pr-space-8">
+<h2 class="font-headline-h2 text-headline-h2 text-on-surface">Whole-Person Healing</h2>
+<div class="w-16 h-1 bg-palette-d-gold mb-space-6"></div>
+<p class="font-body-base text-body-base text-on-surface-variant">
+                    The word <strong class="text-primary italic">Iaomai</strong> is a Greek term meaning "to heal, cure, or make whole." At LFC-CFR, we believe that God's desire for His people is complete wholeness. True health is not merely the absence of disease, but a vibrant state of well-being across every dimension of our lives.
+                </p>
+<p class="font-body-base text-body-base text-on-surface-variant">
+                    The Iaomai Wellness Initiative is our comprehensive approach to integrating faith and health. We recognize that as tri-part beingsâspirit, soul, and bodyâeach area requires intentional care, spiritual grounding, and practical stewardship to reflect the abundant life Christ promised.
+                </p>
+</div>
+<div class="relative rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:-translate-y-2 border border-outline-variant/50">
+<img alt="" class="w-full h-[400px] object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLv5fYJukbd0RKqQrAqlXGGjOmGNjOiDupLmYov0Wor7mnoqzCmAmW6ahslj6ZT790SSXOM4IUC0HRt5qgB8WSpZxXu6GJB4nPgYfKQ46k7kXSBvl_MmFfk59M8SBHDHGhJH2CyGCTv6_Gq60c57Sv8d3JOfok_OJy55CUWuZvrxC2CzmZuUpv0GPgLmhQH3atuYnNOV54O8IvOWaUi49vxc-qyIY0i6oNoAX6uR89YUOH8LcRDUJY3IHa2J"/>
+</div>
+</div>
+</section>
+<!-- Three Pillars Section -->
+<section class="py-space-24 px-space-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-space-12">
+<h2 class="font-headline-h2 text-headline-h2 text-on-surface mb-space-4">The Three Pillars of Wellness</h2>
+<p class="font-body-lead text-body-lead text-on-surface-variant max-w-2xl mx-auto">Our wholistic approach addresses the complete person, providing resources and support for every aspect of your well-being.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-8">
+<!-- Spiritual -->
+<div class="bg-surface rounded-lg p-space-8 border border-outline-variant/30 hover:border-palette-d-gold transition-all duration-300 transform hover:-translate-y-2 shadow-sm hover:shadow-md relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-palette-d-gold transform origin-bottom scale-y-0 group-hover:scale-y-100 transition-transform duration-300"></div>
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-space-6">
+<span class="material-symbols-outlined icon-fill">church</span>
+</div>
+<h3 class="font-headline-h4 text-headline-h4 text-on-surface mb-space-4">Spiritual Wellness</h3>
+<p class="font-body-base text-body-base text-on-surface-variant">
+                        Strengthening your connection with God through disciplined practices. This pillar focuses on prayer, fasting, and deep engagement with the Word to anchor your spirit in truth and divine purpose.
+                    </p>
+</div>
+<!-- Soul -->
+<div class="bg-surface rounded-lg p-space-8 border border-outline-variant/30 hover:border-palette-d-gold transition-all duration-300 transform hover:-translate-y-2 shadow-sm hover:shadow-md relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-palette-d-gold transform origin-bottom scale-y-0 group-hover:scale-y-100 transition-transform duration-300"></div>
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-space-6">
+<span class="material-symbols-outlined icon-fill">psychology</span>
+</div>
+<h3 class="font-headline-h4 text-headline-h4 text-on-surface mb-space-4">Soul Wellness</h3>
+<p class="font-body-base text-body-base text-on-surface-variant">
+                        Nurturing your mind, will, and emotions. We provide resources for mental health awareness, emotional resilience, and inner healing, recognizing that a sound mind is crucial for holistic health.
+                    </p>
+</div>
+<!-- Physical -->
+<div class="bg-surface rounded-lg p-space-8 border border-outline-variant/30 hover:border-palette-d-gold transition-all duration-300 transform hover:-translate-y-2 shadow-sm hover:shadow-md relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-palette-d-gold transform origin-bottom scale-y-0 group-hover:scale-y-100 transition-transform duration-300"></div>
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-space-6">
+<span class="material-symbols-outlined icon-fill">fitness_center</span>
+</div>
+<h3 class="font-headline-h4 text-headline-h4 text-on-surface mb-space-4">Physical Wellness</h3>
+<p class="font-body-base text-body-base text-on-surface-variant">
+                        Honoring the body as the temple of the Holy Spirit. This pillar offers guidance on nutrition, fitness, preventative health measures, and practical stewardship of your physical vessel.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Programs & Events -->
+<section class="py-space-24 px-space-8 bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-space-12">
+<!-- Programs List -->
+<div>
+<h2 class="font-headline-h3 text-headline-h3 text-on-surface mb-space-6">Initiative Programs</h2>
+<div class="space-y-space-4">
+<div class="flex items-start p-space-4 rounded-lg bg-surface-container-low border border-transparent hover:border-outline-variant/50 transition-colors">
+<div class="text-palette-d-gold mr-space-4 mt-1"><span class="material-symbols-outlined">menu_book</span></div>
+<div>
+<h4 class="font-headline-h5 text-headline-h5 text-on-surface">Health &amp; Wholeness Workshops</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Monthly seminars featuring medical professionals and spiritual leaders discussing integrated health topics.</p>
+</div>
+</div>
+<div class="flex items-start p-space-4 rounded-lg bg-surface-container-low border border-transparent hover:border-outline-variant/50 transition-colors">
+<div class="text-palette-d-gold mr-space-4 mt-1"><span class="material-symbols-outlined">diversity_1</span></div>
+<div>
+<h4 class="font-headline-h5 text-headline-h5 text-on-surface">Support Groups</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Safe, confidential spaces for individuals navigating mental health challenges or chronic illness.</p>
+</div>
+</div>
+<div class="flex items-start p-space-4 rounded-lg bg-surface-container-low border border-transparent hover:border-outline-variant/50 transition-colors">
+<div class="text-palette-d-gold mr-space-4 mt-1"><span class="material-symbols-outlined">volunteer_activism</span></div>
+<div>
+<h4 class="font-headline-h5 text-headline-h5 text-on-surface">Healing Prayer Ministry</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Dedicated teams trained to intercede for physical and emotional healing following biblical models.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Coming Events Card -->
+<div class="bg-surface border border-outline-variant/30 rounded-lg p-space-8 shadow-sm">
+<h3 class="font-headline-h4 text-headline-h4 text-on-surface mb-space-6 flex items-center">
+<span class="material-symbols-outlined mr-2 text-primary">calendar_today</span>
+                    Coming Events
+                </h3>
+<ul class="space-y-space-6">
+<li class="flex border-b border-outline-variant/20 pb-space-4 last:border-0 last:pb-0">
+<div class="flex-shrink-0 w-16 text-center mr-space-4">
+<div class="font-label-caps text-label-caps text-primary uppercase">Oct</div>
+<div class="font-headline-h4 text-headline-h4 text-on-surface">14</div>
+</div>
+<div>
+<h5 class="font-headline-h5 text-headline-h5 text-on-surface">Nutrition for the Temple Workshop</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fellowship Hall â¢ 10:00 AM</p>
+</div>
+</li>
+<li class="flex border-b border-outline-variant/20 pb-space-4 last:border-0 last:pb-0">
+<div class="flex-shrink-0 w-16 text-center mr-space-4">
+<div class="font-label-caps text-label-caps text-primary uppercase">Oct</div>
+<div class="font-headline-h4 text-headline-h4 text-on-surface">28</div>
+</div>
+<div>
+<h5 class="font-headline-h5 text-headline-h5 text-on-surface">Mental Health First Aid</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Online via Zoom â¢ 6:30 PM</p>
+</div>
+</li>
+<li class="flex border-b border-outline-variant/20 pb-space-4 last:border-0 last:pb-0">
+<div class="flex-shrink-0 w-16 text-center mr-space-4">
+<div class="font-label-caps text-label-caps text-primary uppercase">Nov</div>
+<div class="font-headline-h4 text-headline-h4 text-on-surface">05</div>
+</div>
+<div>
+<h5 class="font-headline-h5 text-headline-h5 text-on-surface">Corporate Day of Fasting &amp; Prayer</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Main Sanctuary â¢ 6:00 AM - 6:00 PM</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Closing Banner -->
+<section class="bg-palette-a-purple text-center py-space-20 px-space-8 relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white to-transparent"></div>
+<div class="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
+<h2 class="font-headline-h2 text-headline-h2 text-white mb-space-4">Kingdom Health Is Your Inheritance</h2>
+<p class="font-body-lead text-body-lead text-primary-fixed-dim mb-space-8">
+                Jehovah Raphaâthe Lord who healsâis actively moving in our community. Join us in cultivating a lifestyle of wholeness that honors God and empowers you to fulfill your divine calling.
+            </p>
+<button class="bg-palette-d-gold text-on-primary font-label-caps text-label-caps uppercase tracking-widest px-8 py-3 rounded hover:bg-palette-b-champagne transition-colors duration-200 shadow-md">
+                LEARN MORE
+            </button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-palette-a-purple dark:bg-surface-container-lowest w-full rounded-none">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-8 max-w-7xl mx-auto px-space-8 py-space-24">
+<!-- Brand Column -->
+<div class="space-y-space-4">
+<div class="font-headline-h3 text-headline-h3 text-secondary-fixed dark:text-secondary italic">LFC-CFR</div>
+<p class="font-body-sm text-body-sm text-on-primary/80 dark:text-on-surface/80">
+                    Empowering lives through faith, community, and wholistic wellness.
+                </p>
+</div>
+<!-- Links Column 1 -->
+<div>
+<h4 class="font-headline-h5 text-headline-h5 text-on-primary mb-space-4">Navigation</h4>
+<ul class="space-y-space-2">
+<li><a class="font-body-sm text-body-sm text-on-primary/80 dark:text-on-surface/80 hover:text-secondary-fixed-dim underline transition-all opacity-90 hover:opacity-100" href="#">Home</a></li>
+<li><a class="font-body-sm text-body-sm text-on-primary/80 dark:text-on-surface/80 hover:text-secondary-fixed-dim underline transition-all opacity-90 hover:opacity-100" href="#">About</a></li>
+<li><a class="font-body-sm text-body-sm text-secondary-fixed font-bold hover:text-secondary-fixed-dim underline transition-all opacity-90 hover:opacity-100" href="#">Ministries</a></li>
+<li><a class="font-body-sm text-body-sm text-on-primary/80 dark:text-on-surface/80 hover:text-secondary-fixed-dim underline transition-all opacity-90 hover:opacity-100" href="#">Events</a></li>
+<li><a class="font-body-sm text-body-sm text-on-primary/80 dark:text-on-surface/80 hover:text-secondary-fixed-dim underline transition-all opacity-90 hover:opacity-100" href="#">Contact</a></li>
+</ul>
+</div>
+<!-- Links Column 2 -->
+<div>
+<h4 class="font-headline-h5 text-headline-h5 text-on-primary mb-space-4">Legal</h4>
+<ul class="space-y-space-2">
+<li><a class="font-body-sm text-body-sm text-on-primary/80 dark:text-on-surface/80 hover:text-secondary-fixed-dim underline transition-all opacity-90 hover:opacity-100" href="#">Privacy Policy</a></li>
+<li><a class="font-body-sm text-body-sm text-on-primary/80 dark:text-on-surface/80 hover:text-secondary-fixed-dim underline transition-all opacity-90 hover:opacity-100" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<!-- Contact / Theme Column -->
+<div class="space-y-space-6">
+<div>
+<h4 class="font-headline-h5 text-headline-h5 text-on-primary mb-space-2">Contact Us</h4>
+<p class="font-body-sm text-body-sm text-on-primary/80 dark:text-on-surface/80">
+                        123 Sanctuary Way<br/>
+                        Faithville, FL 33000<br/>
+                        (555) 123-4567
+                    </p>
+</div>
+<!-- Theme Toggle Placeholder (Visual Only) -->
+<div class="flex space-x-2">
+<button aria-label="Light Mode" class="p-2 bg-white/10 rounded-full text-on-primary hover:bg-white/20 transition-colors">
+<span class="material-symbols-outlined text-sm">light_mode</span>
+</button>
+<button aria-label="Dark Mode" class="p-2 bg-white/10 rounded-full text-on-primary hover:bg-white/20 transition-colors">
+<span class="material-symbols-outlined text-sm">dark_mode</span>
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10 py-space-4 text-center">
+<p class="font-body-sm text-body-sm text-on-primary/60 dark:text-on-surface/60">
+                Â© 2024 LFC-CFR Ministries. All Rights Reserved.
+            </p>
+</div>
+</footer>
+</body></html>

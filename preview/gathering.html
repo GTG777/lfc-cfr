@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gatherings - LFC-CFR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Lora:ital,wght@1,400&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#673d00",
+                      "error": "#ba1a1a",
+                      "on-surface": "#1f1a22",
+                      "palette-d-gold": "#CA8A04",
+                      "inverse-surface": "#342e37",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-highest": "#e9dfeb",
+                      "palette-c-navy": "#0F172A",
+                      "outline": "#7e7383",
+                      "tertiary-fixed": "#ffddbb",
+                      "inverse-primary": "#dfb7ff",
+                      "palette-c-amber": "#D97706",
+                      "surface-tint": "#803abd",
+                      "secondary": "#805600",
+                      "surface-container-high": "#efe5f1",
+                      "primary": "#500088",
+                      "inverse-on-surface": "#f8edf9",
+                      "palette-a-purple": "#6B21A8",
+                      "secondary-fixed-dim": "#ffba46",
+                      "secondary-container": "#feb63c",
+                      "surface-bright": "#fff7fe",
+                      "on-primary-fixed-variant": "#661aa3",
+                      "surface-container-lowest": "#ffffff",
+                      "primary-fixed": "#f1dbff",
+                      "on-secondary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "palette-a-gold": "#CA8A04",
+                      "primary-container": "#6b21a8",
+                      "palette-d-emerald": "#14532D",
+                      "surface": "#fff7fe",
+                      "primary-fixed-dim": "#dfb7ff",
+                      "on-primary": "#ffffff",
+                      "on-background": "#1f1a22",
+                      "surface-container-low": "#fbf0fc",
+                      "tertiary": "#4e2d00",
+                      "on-primary-container": "#d7a8ff",
+                      "palette-b-champagne": "#B8963E",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-fixed": "#2b1700",
+                      "on-surface-variant": "#4c4452",
+                      "palette-b-crimson": "#7F1D1D",
+                      "tertiary-fixed-dim": "#faba72",
+                      "secondary-fixed": "#ffddb0",
+                      "on-secondary-fixed-variant": "#614000",
+                      "error-container": "#ffdad6",
+                      "surface-dim": "#e1d7e2",
+                      "on-secondary-fixed": "#281800",
+                      "surface-container": "#f5ebf6",
+                      "outline-variant": "#cfc2d4",
+                      "surface-variant": "#e9dfeb",
+                      "tertiary-container": "#6d4100",
+                      "on-secondary-container": "#6e4900",
+                      "on-tertiary-container": "#eeaf68",
+                      "on-primary-fixed": "#2d0050",
+                      "background": "#fff7fe"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "space-32": "128px",
+                      "space-3": "12px",
+                      "space-12": "48px",
+                      "space-4": "16px",
+                      "space-8": "32px",
+                      "space-20": "80px",
+                      "space-16": "64px",
+                      "space-6": "24px",
+                      "space-24": "96px",
+                      "space-2": "8px",
+                      "space-1": "4px"
+              },
+              "fontFamily": {
+                      "headline-h3": [
+                              "Playfair Display"
+                      ],
+                      "display-xl": [
+                              "Playfair Display"
+                      ],
+                      "headline-h2": [
+                              "Playfair Display"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "headline-h5": [
+                              "Inter"
+                      ],
+                      "scripture-quote": [
+                              "Lora"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "body-base": [
+                              "Inter"
+                      ],
+                      "headline-h4": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "caption": [
+                              "Inter"
+                      ],
+                      "headline-h1": [
+                              "Playfair Display"
+                      ],
+                      "body-lead": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-h3": [
+                              "1.875rem",
+                              {
+                                      "lineHeight": "2.25rem",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-xl": [
+                              "4.5rem",
+                              {
+                                      "lineHeight": "4.75rem",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-h2": [
+                              "2.25rem",
+                              {
+                                      "lineHeight": "2.5rem",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "0.75rem",
+                              {
+                                      "lineHeight": "1rem",
+                                      "letterSpacing": "0.15em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-h5": [
+                              "1.25rem",
+                              {
+                                      "lineHeight": "1.75rem",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "scripture-quote": [
+                              "1.5rem",
+                              {
+                                      "lineHeight": "2rem",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-sm": [
+                              "0.875rem",
+                              {
+                                      "lineHeight": "1.25rem",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-base": [
+                              "1rem",
+                              {
+                                      "lineHeight": "1.75rem",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-h4": [
+                              "1.5rem",
+                              {
+                                      "lineHeight": "2rem",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "3.75rem",
+                              {
+                                      "lineHeight": "4rem",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "caption": [
+                              "0.75rem",
+                              {
+                                      "lineHeight": "1rem",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-h1": [
+                              "3rem",
+                              {
+                                      "lineHeight": "3.25rem",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lead": [
+                              "1.125rem",
+                              {
+                                      "lineHeight": "1.75rem",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .group:hover .translate-y-hover {
+            transform: translateY(-4px);
+        }
+        .ministry-card-border {
+            border-left: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .ministry-card-border:hover {
+            border-left-color: theme('colors.palette-a-gold');
+        }
+        .scripture-block {
+            border-left: 3px solid theme('colors.palette-a-gold');
+            background-color: theme('colors.surface-container-low');
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-base min-h-screen flex flex-col">
+<!-- TopAppBar from JSON -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 md:px-space-32 h-20 bg-surface dark:bg-inverse-surface border-b border-outline-variant">
+<div class="text-headline-h4 font-headline-h4 font-bold text-primary dark:text-inverse-primary">
+            LFC-CFR
+        </div>
+<nav class="hidden md:flex space-x-space-6 items-center">
+<!-- Gatherings is ACTIVE -->
+<a class="font-label-caps text-label-caps text-primary dark:text-inverse-primary border-b-2 border-primary dark:border-inverse-primary pb-1 transition-all opacity-80" href="#">
+                Gatherings
+            </a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">
+                Ministries
+            </a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">
+                About
+            </a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">
+                Give
+            </a>
+</nav>
+<div class="hidden md:block">
+<button class="bg-primary text-on-primary font-label-caps text-label-caps py-[14px] px-space-8 rounded hover:bg-primary-container hover:text-on-primary-container transition-colors tracking-[0.08em] uppercase">
+                Plan a Visit
+            </button>
+</div>
+<!-- Mobile Menu Icon -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary cursor-pointer">menu</span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-20"> <!-- pt-20 to offset fixed header -->
+<!-- HERO SECTION -->
+<section class="relative w-full h-[100vh] md:h-[85vh] flex items-center justify-center">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="A grand, modern church sanctuary bathed in warm sunlight pouring through large stained-glass windows. The room features a circular seating arrangement with empty chairs facing a central wooden podium. The architecture combines rustic stone walls with majestic wooden arches, creating an atmosphere of dignity, reverence, and welcoming anticipation. The lighting emphasizes a 'Regal but Welcoming' mood with rich gold and subtle purple undertones." class="w-full h-full object-cover" data-alt="A grand, modern church sanctuary bathed in warm sunlight pouring through large stained-glass windows. The room features a circular seating arrangement with empty chairs facing a central wooden podium. The architecture combines rustic stone walls with majestic wooden arches, creating an atmosphere of dignity, reverence, and welcoming anticipation. The lighting emphasizes a 'Regal but Welcoming' mood with rich gold and subtle purple undertones." src="https://lh3.googleusercontent.com/aida/AP1WRLsw4TOv1Z9LgNxRShGiwtX_DCWBqVQAASCW5zul1PJ8KdhKMFbeh3pE8yMICaO8ARYnJDiQe9z8FiGfveZMrHqYkxaFtcDQDZHPylH0fxd3gyvJ9ftGUn3uEhuXgnkWjXyh3Fz9WTTEY3yPu1xUtDmLRR0-8OzX3IPN-VGo3-kMehLHuKlBrWsj45h9GpyWxV3rDbQaxjEWiQ9pbJtguaOGeLMY8TxlrllF5Bpj4d86dezYy4y-ti_LLdxp"/>
+<!-- 75% Primary Overlay for legibility -->
+<div class="absolute inset-0 bg-primary opacity-75"></div>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
+<h1 class="font-display-xl text-display-xl text-on-primary mb-space-6 drop-shadow-md">
+                    Our Gatherings
+                </h1>
+<div class="scripture-block p-space-6 max-w-2xl text-left bg-opacity-90">
+<p class="font-scripture-quote text-scripture-quote text-on-surface">
+                        "Not forsaking the assembling of ourselves together..."
+                    </p>
+<p class="font-body-base text-body-base text-on-surface-variant mt-2 text-right">
+                        â Hebrews 10:25
+                    </p>
+</div>
+</div>
+</section>
+<!-- THREE WAYS TO JOIN (Bento Grid Style) -->
+<section class="py-space-16 md:py-space-24 px-4 md:px-space-32 max-w-[1280px] mx-auto">
+<div class="text-center mb-space-12">
+<h2 class="font-headline-h2 text-headline-h2 text-on-surface mb-space-2">Ways to Join Us</h2>
+<div class="h-1 w-24 bg-palette-a-gold mx-auto rounded"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-6">
+<!-- In Person Card -->
+<div class="bg-surface border border-outline-variant p-space-8 rounded flex flex-col items-center text-center group transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-palette-a-gold relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-palette-a-gold transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+<span class="material-symbols-outlined text-display-xl text-palette-a-gold mb-space-4" style="font-variation-settings: 'FILL' 1;">church</span>
+<h3 class="font-headline-h4 text-headline-h4 text-primary mb-space-2">Join Us in the Sanctuary</h3>
+<p class="font-body-base text-body-base text-on-surface-variant mb-space-6 flex-grow">
+                        5252 Olde Towne Rd, Suite C<br/>Williamsburg, VA 23188
+                    </p>
+<button class="w-full border-2 border-primary text-primary font-label-caps text-label-caps py-[14px] px-space-8 rounded hover:bg-primary hover:text-on-primary transition-colors tracking-[0.08em] uppercase">
+                        Get Directions
+                    </button>
+</div>
+<!-- Facebook Live Card -->
+<div class="bg-surface border border-outline-variant p-space-8 rounded flex flex-col items-center text-center group transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-palette-a-gold relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-palette-a-gold transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+<span class="material-symbols-outlined text-display-xl text-palette-a-gold mb-space-4" style="font-variation-settings: 'FILL' 1;">live_tv</span>
+<h3 class="font-headline-h4 text-headline-h4 text-primary mb-space-2">Watch Online</h3>
+<p class="font-body-base text-body-base text-on-surface-variant mb-space-2">
+                        Sunday 10AM EST
+                    </p>
+<p class="font-body-sm text-body-sm text-primary mb-space-6 flex-grow font-semibold">
+                        @lfcreconstruction
+                    </p>
+<button class="w-full bg-primary text-on-primary font-label-caps text-label-caps py-[14px] px-space-8 rounded hover:bg-primary-container hover:text-on-primary-container transition-colors tracking-[0.08em] uppercase">
+                        Join Live
+                    </button>
+</div>
+<!-- Zoom Card -->
+<div class="bg-surface border border-outline-variant p-space-8 rounded flex flex-col items-center text-center group transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-palette-a-gold relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-palette-a-gold transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+<span class="material-symbols-outlined text-display-xl text-palette-a-gold mb-space-4" style="font-variation-settings: 'FILL' 1;">video_camera_front</span>
+<h3 class="font-headline-h4 text-headline-h4 text-primary mb-space-2">Interactive Fellowship</h3>
+<p class="font-body-base text-body-base text-on-surface-variant mb-space-6 flex-grow">
+                        Meeting ID:<br/><span class="font-bold text-on-surface">882 3700 5419</span>
+</p>
+<button class="w-full border-2 border-primary text-primary font-label-caps text-label-caps py-[14px] px-space-8 rounded hover:bg-primary hover:text-on-primary transition-colors tracking-[0.08em] uppercase">
+                        Launch Zoom
+                    </button>
+</div>
+</div>
+</section>
+<!-- WEEKLY FELLOWSHIP & ANNUAL CELEBRATION (Asymmetric Layout) -->
+<section class="py-space-16 md:py-space-24 bg-surface-container-low border-y border-outline-variant">
+<div class="max-w-[1280px] mx-auto px-4 md:px-space-32">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-12">
+<!-- Left Column: Weekly Fellowship -->
+<div class="lg:col-span-7 space-y-space-8">
+<div>
+<h2 class="font-headline-h2 text-headline-h2 text-on-surface mb-space-6 border-b border-outline-variant pb-2 inline-block">Weekly Fellowship</h2>
+</div>
+<!-- Building Block Sundays -->
+<div class="ministry-card-border bg-surface p-space-6 shadow-sm rounded flex flex-col md:flex-row gap-space-6 items-start">
+<div class="bg-primary-container p-3 rounded-full shrink-0">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+</div>
+<div>
+<h4 class="font-headline-h4 text-headline-h4 text-on-surface mb-1">Building Block Sundays</h4>
+<p class="font-label-caps text-label-caps text-palette-a-gold mb-3">Sundays at 10:00 AM</p>
+<p class="font-body-base text-body-base text-on-surface-variant">
+                                    Join us for foundational teachings designed for community reconstruction and personal spiritual growth. Engage in deep scriptural study and practical application.
+                                </p>
+</div>
+</div>
+<!-- Corporate Fasting & Prayer -->
+<div class="ministry-card-border bg-surface p-space-6 shadow-sm rounded flex flex-col md:flex-row gap-space-6 items-start">
+<div class="bg-primary-container p-3 rounded-full shrink-0">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">folded_hands</span>
+</div>
+<div>
+<h4 class="font-headline-h4 text-headline-h4 text-on-surface mb-1">Corporate Fasting &amp; Prayer</h4>
+<p class="font-label-caps text-label-caps text-palette-a-gold mb-3">First Week Monthly / Wednesday Evenings</p>
+<p class="font-body-base text-body-base text-on-surface-variant">
+                                    Consecrate the month with us during our corporate fasting period in the first week. We gather every Wednesday evening for dedicated prayer sessions to intercede for our community and world.
+                                </p>
+</div>
+</div>
+</div>
+<!-- Right Column: Annual Celebration -->
+<div class="lg:col-span-5 flex flex-col h-full justify-center">
+<div class="relative bg-primary text-on-primary rounded overflow-hidden shadow-lg h-full min-h-[400px] flex flex-col justify-end p-space-8 group">
+<!-- Background Image with Overlay for Card -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-palette-a-purple opacity-80 mix-blend-multiply"></div>
+<img alt="A radiant sunrise breaking over a serene landscape, symbolizing resurrection and new beginnings. The sky is painted in warm, hopeful hues of gold, amber, and deep purple, reflecting the 'Regal but Welcoming' aesthetic. The mood is triumphant and peaceful, perfect for representing a global celebration of faith." class="w-full h-full object-cover absolute inset-0 -z-10 group-hover:scale-105 transition-transform duration-700" data-alt="A radiant sunrise breaking over a serene landscape, symbolizing resurrection and new beginnings. The sky is painted in warm, hopeful hues of gold, amber, and deep purple, reflecting the 'Regal but Welcoming' aesthetic. The mood is triumphant and peaceful, perfect for representing a global celebration of faith." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKI3Ql4l1JP9-zRFL2DlY5KGgrBmmcfqlKTCyfZf6qUy5OO6VL3Nam-XOucnKEmFZrIu5IqnFtR1RsBewlUPteiooHMP0tuDuSzZkiFlp8Ev2LUzuCc5-oy2JGuvgMRbnaiaaqz2fbqFRh3gcApEcHte24GIjVtaBRWUUyQFXBF7Jfe7Rd32RRzyp34EkhtbfGPt-lIM5yebgVGPiIxt2JOToDFslNhKqvJfwgX83tc_frIG7G2sfvukxIQ-HbNNeH5catAjYAmZwp"/>
+</div>
+<div class="relative z-10">
+<div class="bg-palette-a-gold text-on-primary inline-block px-3 py-1 rounded-full font-label-caps text-label-caps mb-space-4">
+                                    Annual Event
+                                </div>
+<h3 class="font-headline-h3 text-headline-h3 mb-space-2">Resurrection Sunday</h3>
+<p class="font-body-lead text-body-lead mb-space-6 text-primary-fixed">
+                                    Join our annual global celebration of life, victory, and renewal. A cornerstone event of our faith community.
+                                </p>
+<button class="border border-on-primary text-on-primary font-label-caps text-label-caps py-2 px-space-6 rounded hover:bg-on-primary hover:text-primary transition-colors tracking-[0.08em] uppercase">
+                                    Learn More
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- NEED PRAYER CTA Banner -->
+<section class="bg-palette-c-navy py-space-12 px-4">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row items-center justify-between gap-space-8 bg-surface-tint/10 p-space-8 rounded border border-surface-tint/20">
+<div class="flex items-center gap-space-6">
+<span class="material-symbols-outlined text-display-lg text-palette-d-gold" style="font-variation-settings: 'FILL' 1;">volunteer_activism</span>
+<div>
+<h2 class="font-headline-h3 text-headline-h3 text-on-primary mb-1">Need Prayer?</h2>
+<p class="font-body-base text-body-base text-inverse-primary">We are here to stand in agreement with you. Share your requests with our intercessory team.</p>
+</div>
+</div>
+<button class="bg-palette-a-gold text-on-surface font-label-caps text-label-caps py-[14px] px-space-8 rounded hover:bg-palette-d-gold transition-colors tracking-[0.08em] uppercase whitespace-nowrap">
+                    Submit Request
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer from JSON -->
+<footer class="bg-palette-c-navy dark:bg-black w-full py-space-12 px-4 md:px-space-32 flex flex-col md:flex-row justify-between items-center gap-space-6">
+<div class="font-headline-h5 text-headline-h5 text-palette-d-gold">
+            LFC-CFR
+        </div>
+<div class="font-body-sm text-body-sm text-palette-d-gold dark:text-palette-a-gold text-center md:text-left">
+            Â© 2024 LFC-CFR. All Rights Reserved. Regal but Welcoming.
+        </div>
+<nav class="flex flex-wrap justify-center gap-space-4">
+<a class="font-label-caps text-label-caps text-surface-variant opacity-80 hover:text-palette-d-gold transition-colors" href="#">
+                Statement of Faith
+            </a>
+<a class="font-label-caps text-label-caps text-surface-variant opacity-80 hover:text-palette-d-gold transition-colors" href="#">
+                Privacy Policy
+            </a>
+<a class="font-label-caps text-label-caps text-surface-variant opacity-80 hover:text-palette-d-gold transition-colors" href="#">
+                Contact Us
+            </a>
+<a class="font-label-caps text-label-caps text-surface-variant opacity-80 hover:text-palette-d-gold transition-colors" href="#">
+                Terms of Service
+            </a>
+</nav>
+</footer>
+</body></html>

@@ -1,0 +1,394 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LFC-CFR | Rebuilding People and Cities</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Lora:ital,wght@1,400&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#fbf0fc",
+                    "on-primary-container": "#d7a8ff",
+                    "inverse-on-surface": "#f8edf9",
+                    "primary-container": "#6b21a8",
+                    "tertiary-container": "#6d4100",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#ffddb0",
+                    "inverse-surface": "#342e37",
+                    "primary": "#500088",
+                    "inverse-primary": "#dfb7ff",
+                    "on-secondary-fixed": "#281800",
+                    "surface-bright": "#fff7fe",
+                    "on-surface": "#1f1a22",
+                    "on-primary-fixed": "#2d0050",
+                    "secondary-container": "#feb63c",
+                    "secondary-fixed-dim": "#ffba46",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#f5ebf6",
+                    "error-container": "#ffdad6",
+                    "palette-c-amber": "#D97706",
+                    "on-secondary-fixed-variant": "#614000",
+                    "on-surface-variant": "#4c4452",
+                    "surface": "#fff7fe",
+                    "primary-fixed-dim": "#dfb7ff",
+                    "surface-variant": "#e9dfeb",
+                    "on-tertiary-fixed-variant": "#673d00",
+                    "tertiary-fixed-dim": "#faba72",
+                    "secondary": "#805600",
+                    "on-background": "#1f1a22",
+                    "surface-tint": "#803abd",
+                    "on-secondary-container": "#6e4900",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#efe5f1",
+                    "surface-container-highest": "#e9dfeb",
+                    "tertiary-fixed": "#ffddbb",
+                    "surface-dim": "#e1d7e2",
+                    "on-primary-fixed-variant": "#661aa3",
+                    "palette-a-purple": "#6B21A8",
+                    "outline": "#7e7383",
+                    "tertiary": "#4e2d00",
+                    "background": "#fff7fe",
+                    "palette-d-emerald": "#14532D",
+                    "primary-fixed": "#f1dbff",
+                    "palette-d-gold": "#CA8A04",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#cfc2d4",
+                    "palette-a-gold": "#CA8A04",
+                    "palette-c-navy": "#0F172A",
+                    "on-tertiary-container": "#eeaf68",
+                    "palette-b-champagne": "#B8963E",
+                    "palette-b-crimson": "#7F1D1D",
+                    "on-tertiary-fixed": "#2b1700",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "space-32": "128px",
+                    "space-3": "12px",
+                    "space-6": "24px",
+                    "space-2": "8px",
+                    "space-12": "48px",
+                    "space-4": "16px",
+                    "space-24": "96px",
+                    "space-20": "80px",
+                    "space-1": "4px",
+                    "space-16": "64px",
+                    "space-8": "32px"
+            },
+            "fontFamily": {
+                    "scripture-quote": ["Lora"],
+                    "headline-h5": ["Inter"],
+                    "caption": ["Inter"],
+                    "headline-h3": ["Playfair Display"],
+                    "body-sm": ["Inter"],
+                    "display-xl": ["Playfair Display"],
+                    "headline-h1": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "body-base": ["Inter"],
+                    "label-caps": ["Inter"],
+                    "headline-h2": ["Playfair Display"],
+                    "headline-h4": ["Inter"],
+                    "body-lead": ["Inter"]
+            },
+            "fontSize": {
+                    "scripture-quote": ["1.5rem", {"lineHeight": "2rem", "fontWeight": "400"}],
+                    "headline-h5": ["1.25rem", {"lineHeight": "1.75rem", "fontWeight": "600"}],
+                    "caption": ["0.75rem", {"lineHeight": "1rem", "fontWeight": "400"}],
+                    "headline-h3": ["1.875rem", {"lineHeight": "2.25rem", "fontWeight": "700"}],
+                    "body-sm": ["0.875rem", {"lineHeight": "1.25rem", "fontWeight": "400"}],
+                    "display-xl": ["4.5rem", {"lineHeight": "4.75rem", "fontWeight": "700"}],
+                    "headline-h1": ["3rem", {"lineHeight": "3.25rem", "fontWeight": "700"}],
+                    "display-lg": ["3.75rem", {"lineHeight": "4rem", "fontWeight": "700"}],
+                    "body-base": ["1rem", {"lineHeight": "1.75rem", "fontWeight": "400"}],
+                    "label-caps": ["0.75rem", {"lineHeight": "1rem", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                    "headline-h2": ["2.25rem", {"lineHeight": "2.5rem", "fontWeight": "700"}],
+                    "headline-h4": ["1.5rem", {"lineHeight": "2rem", "fontWeight": "600"}],
+                    "body-lead": ["1.125rem", {"lineHeight": "1.75rem", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-base antialiased selection:bg-palette-a-purple selection:text-white">
+<!-- TopNavBar -->
+<header class="bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-md fixed w-full top-0 z-50 border-b border-outline-variant/30 shadow-sm transition-all duration-300">
+<div class="max-w-7xl mx-auto px-space-6 lg:px-space-12 flex justify-between items-center h-20">
+<!-- Brand Logo -->
+<a class="font-headline-h4 text-headline-h4 font-bold text-primary dark:text-inverse-primary tracking-tight" href="#">
+                LFC-CFR
+            </a>
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex space-x-space-8 items-center">
+<!-- Active Link -->
+<a class="font-body-base text-body-base uppercase tracking-wider text-primary dark:text-inverse-primary border-b-2 border-palette-a-gold pb-1 font-bold hover:text-palette-a-gold transition-all duration-300" href="#">Home</a>
+<!-- Inactive Links -->
+<a class="font-body-base text-body-base uppercase tracking-wider text-on-surface-variant dark:text-inverse-on-surface hover:text-primary transition-colors hover:text-palette-a-gold transition-all duration-300" href="#">About</a>
+<a class="font-body-base text-body-base uppercase tracking-wider text-on-surface-variant dark:text-inverse-on-surface hover:text-primary transition-colors hover:text-palette-a-gold transition-all duration-300" href="#">Ministries</a>
+<a class="font-body-base text-body-base uppercase tracking-wider text-on-surface-variant dark:text-inverse-on-surface hover:text-primary transition-colors hover:text-palette-a-gold transition-all duration-300" href="#">Events</a>
+<a class="font-body-base text-body-base uppercase tracking-wider text-on-surface-variant dark:text-inverse-on-surface hover:text-primary transition-colors hover:text-palette-a-gold transition-all duration-300" href="#">Contact</a>
+</nav>
+<!-- Trailing Action -->
+<div class="hidden md:flex items-center">
+<a class="font-label-caps text-label-caps uppercase tracking-wider bg-palette-a-gold text-white px-6 py-2.5 rounded-DEFAULT hover:opacity-90 hover:-translate-y-0.5 transition-all shadow-sm" href="#">
+                    GIVE
+                </a>
+</div>
+<!-- Mobile Menu Toggle (Simplified) -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[100vh] flex flex-col justify-center items-center bg-palette-a-purple overflow-hidden px-space-6">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover opacity-20 mix-blend-overlay" src="https://lh3.googleusercontent.com/aida/AP1WRLsw4TOv1Z9LgNxRShGiwtX_DCWBqVQAASCW5zul1PJ8KdhKMFbeh3pE8yMICaO8ARYnJDiQe9z8FiGfveZMrHqYkxaFtcDQDZHPylH0fxd3gyvJ9ftGUn3uEhuXgnkWjXyh3Fz9WTTEY3yPu1xUtDmLRR0-8OzX3IPN-VGo3-kMehLHuKlBrWsj45h9GpyWxV3rDbQaxjEWiQ9pbJtguaOGeLMY8TxlrllF5Bpj4d86dezYy4y-ti_LLdxp"/>
+<!-- Tonal Overlay -->
+<div class="absolute inset-0 bg-gradient-to-b from-primary/80 to-palette-c-navy/90 mix-blend-multiply"></div>
+</div>
+<!-- Content -->
+<div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+<h1 class="font-headline-h1 text-headline-h1 md:font-display-lg md:text-display-lg text-white mb-space-8 drop-shadow-lg max-w-3xl leading-tight">
+                    Rebuilding People and Cities for A Path of Kingdom Destiny!
+                </h1>
+<div class="mb-space-12 max-w-2xl">
+<p class="font-scripture-quote text-scripture-quote text-palette-a-gold italic drop-shadow-md">
+                        "They shall rebuild the ancient ruins, they shall raise up the former devastations; they shall repair the ruined cities, the devastations of many generations."
+                    </p>
+<p class="font-body-sm text-body-sm text-white/80 mt-space-4 uppercase tracking-widest font-semibold">
+                        Isaiah 58:12
+                    </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-6 mt-space-4">
+<a class="inline-flex items-center justify-center font-label-caps text-label-caps uppercase tracking-wider bg-palette-a-gold text-white px-8 py-4 rounded-DEFAULT hover:bg-palette-b-champagne hover:-translate-y-1 transition-all duration-300 shadow-lg" href="#">
+                        Join Us Sunday
+                    </a>
+<a class="inline-flex items-center justify-center font-label-caps text-label-caps uppercase tracking-wider border-2 border-white text-white bg-transparent px-8 py-4 rounded-DEFAULT hover:bg-white/10 hover:-translate-y-1 transition-all duration-300" href="#">
+                        Watch Online
+                    </a>
+</div>
+</div>
+</section>
+<!-- Upcoming Events -->
+<section class="py-space-16 md:py-space-24 bg-background px-space-6 lg:px-space-12">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col items-center text-center mb-space-12">
+<h2 class="font-headline-h2 text-headline-h2 text-primary mb-space-4">Upcoming Events</h2>
+<div class="w-16 h-1 bg-palette-a-gold rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-6">
+<!-- Event Card 1 -->
+<div class="bg-surface border border-outline/20 hover:border-palette-a-gold hover:-translate-y-1 shadow-sm hover:shadow-md transition-all duration-300 rounded-lg p-space-6 flex flex-col group">
+<span class="material-symbols-outlined text-primary text-4xl mb-space-4 group-hover:scale-110 transition-transform">church</span>
+<h3 class="font-headline-h5 text-headline-h5 text-on-surface mb-2">Building Block Sunday</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-auto flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">schedule</span> Sundays at 10:00 AM
+                        </p>
+</div>
+<!-- Event Card 2 -->
+<div class="bg-surface border border-outline/20 hover:border-palette-a-gold hover:-translate-y-1 shadow-sm hover:shadow-md transition-all duration-300 rounded-lg p-space-6 flex flex-col group">
+<span class="material-symbols-outlined text-primary text-4xl mb-space-4 group-hover:scale-110 transition-transform">live_tv</span>
+<h3 class="font-headline-h5 text-headline-h5 text-on-surface mb-2">Facebook Live Broadcast</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-auto flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">schedule</span> Wednesdays at 7:00 PM
+                        </p>
+</div>
+<!-- Event Card 3 -->
+<div class="bg-surface border border-outline/20 hover:border-palette-a-gold hover:-translate-y-1 shadow-sm hover:shadow-md transition-all duration-300 rounded-lg p-space-6 flex flex-col group">
+<span class="material-symbols-outlined text-primary text-4xl mb-space-4 group-hover:scale-110 transition-transform">water_drop</span>
+<h3 class="font-headline-h5 text-headline-h5 text-on-surface mb-2">Corporate Fasting</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-auto flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">event</span> First Week of Month
+                        </p>
+</div>
+<!-- Event Card 4 -->
+<div class="bg-surface border border-outline/20 hover:border-palette-a-gold hover:-translate-y-1 shadow-sm hover:shadow-md transition-all duration-300 rounded-lg p-space-6 flex flex-col group">
+<span class="material-symbols-outlined text-primary text-4xl mb-space-4 group-hover:scale-110 transition-transform">celebration</span>
+<h3 class="font-headline-h5 text-headline-h5 text-on-surface mb-2">Resurrection Sunday</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-auto flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">event</span> Special Service
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- About the Ministry -->
+<section class="py-space-16 md:py-space-24 bg-surface-container-lowest border-y border-outline-variant/20 px-space-6 lg:px-space-12 relative overflow-hidden">
+<!-- Decorative background element -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low -skew-x-12 transform origin-top right-[-10%] z-0"></div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-space-12 lg:gap-space-24 items-center relative z-10">
+<div class="flex flex-col">
+<h2 class="font-headline-h2 text-headline-h2 text-primary mb-space-6">Walking in Kingdom Authority</h2>
+<p class="font-body-lead text-body-lead text-on-surface-variant mb-space-6">
+                        At Labourers For Christ Center For Reconstruction, we are called to be catalysts for spiritual awakening and community transformation. We believe in equipping believers to walk confidently in their God-given identity and authority.
+                    </p>
+<!-- Scripture Quote Block -->
+<blockquote class="border-l-[3px] border-palette-a-gold bg-surface-container p-space-6 rounded-r-lg mt-space-4 relative">
+<span class="material-symbols-outlined absolute top-4 right-4 text-palette-a-gold/20 text-4xl">format_quote</span>
+<p class="font-scripture-quote text-scripture-quote text-primary italic relative z-10">
+                            "And I will give you the keys of the kingdom of heaven, and whatever you bind on earth will be bound in heaven, and whatever you loose on earth will be loosed in heaven."
+                        </p>
+<footer class="font-body-sm text-body-sm text-on-surface-variant mt-4 font-semibold uppercase tracking-wider">Matthew 16:19</footer>
+</blockquote>
+</div>
+<div class="relative">
+<div class="absolute inset-0 bg-palette-a-gold rounded-xl transform translate-x-4 translate-y-4"></div>
+<img alt="A diverse congregation engaged in passionate worship inside a modern, well-lit sanctuary. The atmosphere is reverent and vibrant, reflecting an African American church tradition. The lighting is bright and inviting, highlighting a speaker on stage with a raised hand in mid-sermon. The space features contemporary architecture with subtle gold accents and deep purple ambient uplighting. The mood is powerful, communal, and spiritually uplifting." class="w-full h-[500px] object-cover rounded-xl shadow-lg relative z-10" data-alt="A diverse congregation engaged in passionate worship inside a modern, well-lit sanctuary. The atmosphere is reverent and vibrant, reflecting an African American church tradition. The lighting is bright and inviting, highlighting a speaker on stage with a raised hand in mid-sermon. The space features contemporary architecture with subtle gold accents and deep purple ambient uplighting. The mood is powerful, communal, and spiritually uplifting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyVJ0yAXLmDONCE_HnoFXC1WUOUQdd-IA18Vss8aOss45m2bzDqfMOngbBI9deBkkXLkcymki101bYKJNOX0m8SL1Gqg3E9xXwNkd_7aNTbEDF6efSr_jkpn4jWzXJRqe-MJNlzDfFHcdx2QkfA0DvvN-lHY9WthRezG1WiT0j9ESCqCkK7ieaN4tE_3ojwBhxqrCg_F386l_a5aE4P5D8XxtuE1jtXVrshnEHLPl6cQMbZGWe5VmmdpF-h7UmEMYYly8ESOoY7fHT"/>
+</div>
+</div>
+</section>
+<!-- Our Ministries (Bento Grid Style) -->
+<section class="py-space-16 md:py-space-24 bg-background px-space-6 lg:px-space-12">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col items-center text-center mb-space-12">
+<h2 class="font-headline-h2 text-headline-h2 text-primary mb-space-4">Our Ministries</h2>
+<p class="font-body-lead text-body-lead text-on-surface-variant max-w-2xl">Discover a place to grow, serve, and connect within our community.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-8">
+<!-- Ministry Card Style from Guidelines -->
+<div class="bg-surface border border-outline/20 rounded-lg p-space-8 border-l-[4px] border-l-transparent hover:border-l-palette-a-gold hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-surface-container-low rounded-bl-full z-0 group-hover:scale-110 transition-transform"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 bg-surface-container p-3 rounded-full inline-block">groups</span>
+<h3 class="font-headline-h4 text-headline-h4 text-on-surface mb-3 group-hover:text-primary transition-colors">I AM the Storm</h3>
+<p class="font-body-base text-body-base text-on-surface-variant mb-6">Men's ministry dedicated to building spiritual leaders and strengthening families through brotherhood.</p>
+<a class="font-label-caps text-label-caps text-primary hover:text-palette-a-gold uppercase tracking-wider flex items-center gap-1 mt-auto font-bold" href="#">
+                                Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="bg-surface border border-outline/20 rounded-lg p-space-8 border-l-[4px] border-l-transparent hover:border-l-palette-a-gold hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-surface-container-low rounded-bl-full z-0 group-hover:scale-110 transition-transform"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 bg-surface-container p-3 rounded-full inline-block">diamond</span>
+<h3 class="font-headline-h4 text-headline-h4 text-on-surface mb-3 group-hover:text-primary transition-colors">Ruby's Gems</h3>
+<p class="font-body-base text-body-base text-on-surface-variant mb-6">Women's fellowship focused on empowerment, mentorship, and walking gracefully in God's purpose.</p>
+<a class="font-label-caps text-label-caps text-primary hover:text-palette-a-gold uppercase tracking-wider flex items-center gap-1 mt-auto font-bold" href="#">
+                                Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="bg-surface border border-outline/20 rounded-lg p-space-8 border-l-[4px] border-l-transparent hover:border-l-palette-a-gold hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-surface-container-low rounded-bl-full z-0 group-hover:scale-110 transition-transform"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 bg-surface-container p-3 rounded-full inline-block">spa</span>
+<h3 class="font-headline-h4 text-headline-h4 text-on-surface mb-3 group-hover:text-primary transition-colors">Iaomai Wellness</h3>
+<p class="font-body-base text-body-base text-on-surface-variant mb-6">Promoting holistic health, mental well-being, and physical vitality through a biblical lens.</p>
+<a class="font-label-caps text-label-caps text-primary hover:text-palette-a-gold uppercase tracking-wider flex items-center gap-1 mt-auto font-bold" href="#">
+                                Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="bg-surface border border-outline/20 rounded-lg p-space-8 border-l-[4px] border-l-transparent hover:border-l-palette-a-gold hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-surface-container-low rounded-bl-full z-0 group-hover:scale-110 transition-transform"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 bg-surface-container p-3 rounded-full inline-block">hourglass_bottom</span>
+<h3 class="font-headline-h4 text-headline-h4 text-on-surface mb-3 group-hover:text-primary transition-colors">7 Days Dead</h3>
+<p class="font-body-base text-body-base text-on-surface-variant mb-6">A transformative discipleship course focused on dying to self and living fully in Christ.</p>
+<a class="font-label-caps text-label-caps text-primary hover:text-palette-a-gold uppercase tracking-wider flex items-center gap-1 mt-auto font-bold" href="#">
+                                Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="bg-surface border border-outline/20 rounded-lg p-space-8 border-l-[4px] border-l-transparent hover:border-l-palette-a-gold hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-surface-container-low rounded-bl-full z-0 group-hover:scale-110 transition-transform"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 bg-surface-container p-3 rounded-full inline-block">folded_hands</span>
+<h3 class="font-headline-h4 text-headline-h4 text-on-surface mb-3 group-hover:text-primary transition-colors">Wailing Wall</h3>
+<p class="font-body-base text-body-base text-on-surface-variant mb-6">Intercessory prayer ministry standing in the gap for our church, city, and nation.</p>
+<a class="font-label-caps text-label-caps text-primary hover:text-palette-a-gold uppercase tracking-wider flex items-center gap-1 mt-auto font-bold" href="#">
+                                Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="bg-surface border border-outline/20 rounded-lg p-space-8 border-l-[4px] border-l-transparent hover:border-l-palette-a-gold hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-surface-container-low rounded-bl-full z-0 group-hover:scale-110 transition-transform"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 bg-surface-container p-3 rounded-full inline-block">volunteer_activism</span>
+<h3 class="font-headline-h4 text-headline-h4 text-on-surface mb-3 group-hover:text-primary transition-colors">Outreach</h3>
+<p class="font-body-base text-body-base text-on-surface-variant mb-6">Taking the love of Christ beyond the four walls and serving the practical needs of our community.</p>
+<a class="font-label-caps text-label-caps text-primary hover:text-palette-a-gold uppercase tracking-wider flex items-center gap-1 mt-auto font-bold" href="#">
+                                Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Giving Banner -->
+<section class="py-space-24 bg-primary px-space-6 relative overflow-hidden text-center flex flex-col items-center justify-center">
+<!-- Subtle pattern overlay -->
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white to-transparent"></div>
+<div class="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
+<span class="material-symbols-outlined text-palette-a-gold text-5xl mb-space-6">volunteer_activism</span>
+<h2 class="font-headline-h1 text-headline-h1 text-white mb-space-6">Partner With The Vision</h2>
+<p class="font-body-lead text-body-lead text-white/80 mb-space-12 max-w-xl">
+                    Your generosity enables us to rebuild lives, support our community, and advance the Kingdom. Join us in making a lasting impact.
+                </p>
+<a class="inline-flex items-center justify-center font-label-caps text-label-caps uppercase tracking-wider bg-palette-a-gold text-white px-10 py-4 rounded-DEFAULT hover:bg-white hover:text-primary hover:-translate-y-1 transition-all duration-300 shadow-lg font-bold" href="#">
+                    GIVE NOW
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer Component from JSON -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface w-full pt-space-16 pb-space-8 flat no shadows text-primary dark:text-inverse-primary font-body-sm text-body-sm transition-opacity duration-200">
+<div class="max-w-7xl mx-auto px-space-6 lg:px-space-12 grid grid-cols-1 md:grid-cols-4 gap-space-8">
+<!-- Brand Column -->
+<div class="flex flex-col space-y-space-4">
+<div class="font-headline-h3 text-headline-h3 text-primary dark:text-inverse-primary tracking-tight">LFC-CFR</div>
+<p class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm max-w-xs">
+                    Rebuilding People and Cities for A Path of Kingdom Destiny.
+                </p>
+</div>
+<!-- Links Columns (Distributed) -->
+<div class="flex flex-col space-y-space-3">
+<h4 class="font-headline-h5 text-headline-h5 text-primary mb-2">Explore</h4>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary underline transition-all" href="#">Ministries</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary underline transition-all" href="#">Events</a>
+</div>
+<div class="flex flex-col space-y-space-3">
+<h4 class="font-headline-h5 text-headline-h5 text-primary mb-2">Connect</h4>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary underline transition-all" href="#">Prayer Request</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary underline transition-all" href="#">Give</a>
+</div>
+<div class="flex flex-col space-y-space-3">
+<h4 class="font-headline-h5 text-headline-h5 text-primary mb-2">Legal</h4>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary underline transition-all" href="#">Privacy Policy</a>
+</div>
+</div>
+<!-- Copyright & Divider -->
+<div class="max-w-7xl mx-auto px-space-6 lg:px-space-12 mt-space-12 pt-space-6 border-t border-outline-variant/30 text-center md:text-left text-on-surface-variant dark:text-outline-variant">
+            Â© 2024 Labourers For Christ Center For Reconstruction. All rights reserved.
+        </div>
+</footer>
+</body></html>

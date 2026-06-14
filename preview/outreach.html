@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Outreach &amp; Ministries - LFC-CFR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Lora:ital,wght@0,400;1,400&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#ffba46",
+                        "surface-container-high": "#efe5f1",
+                        "palette-d-gold": "#CA8A04",
+                        "on-secondary-fixed": "#281800",
+                        "primary": "#500088",
+                        "tertiary-fixed-dim": "#faba72",
+                        "on-surface-variant": "#4c4452",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#ffddb0",
+                        "palette-b-champagne": "#B8963E",
+                        "secondary": "#805600",
+                        "inverse-primary": "#dfb7ff",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1f1a22",
+                        "palette-a-purple": "#6B21A8",
+                        "inverse-on-surface": "#f8edf9",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#6e4900",
+                        "on-surface": "#1f1a22",
+                        "surface": "#fff7fe",
+                        "surface-dim": "#e1d7e2",
+                        "palette-d-emerald": "#14532D",
+                        "tertiary": "#4e2d00",
+                        "on-tertiary-fixed": "#2b1700",
+                        "tertiary-fixed": "#ffddbb",
+                        "on-primary-fixed": "#2d0050",
+                        "on-tertiary-container": "#eeaf68",
+                        "on-secondary-fixed-variant": "#614000",
+                        "surface-container": "#f5ebf6",
+                        "outline": "#7e7383",
+                        "background": "#fff7fe",
+                        "palette-c-navy": "#0F172A",
+                        "on-primary-container": "#d7a8ff",
+                        "surface-variant": "#e9dfeb",
+                        "on-primary-fixed-variant": "#661aa3",
+                        "on-tertiary-fixed-variant": "#673d00",
+                        "surface-container-highest": "#e9dfeb",
+                        "primary-fixed-dim": "#dfb7ff",
+                        "surface-container-low": "#fbf0fc",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#342e37",
+                        "palette-c-amber": "#D97706",
+                        "tertiary-container": "#6d4100",
+                        "surface-tint": "#803abd",
+                        "primary-container": "#6b21a8",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#f1dbff",
+                        "error-container": "#ffdad6",
+                        "palette-a-gold": "#CA8A04",
+                        "secondary-container": "#feb63c",
+                        "palette-b-crimson": "#7F1D1D",
+                        "surface-bright": "#fff7fe",
+                        "outline-variant": "#cfc2d4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "space-8": "32px",
+                        "space-12": "48px",
+                        "space-2": "8px",
+                        "space-32": "128px",
+                        "space-4": "16px",
+                        "space-16": "64px",
+                        "space-3": "12px",
+                        "space-24": "96px",
+                        "space-20": "80px",
+                        "space-6": "24px",
+                        "space-1": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-h2": ["Playfair Display"],
+                        "body-lead": ["Inter"],
+                        "display-lg": ["Playfair Display"],
+                        "display-xl": ["Playfair Display"],
+                        "headline-h5": ["Inter"],
+                        "headline-h1": ["Playfair Display"],
+                        "body-base": ["Inter"],
+                        "caption": ["Inter"],
+                        "headline-h3": ["Playfair Display"],
+                        "label-caps": ["Inter"],
+                        "headline-h4": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "scripture-quote": ["Lora"]
+                    },
+                    "fontSize": {
+                        "headline-h2": ["2.25rem", { "lineHeight": "2.5rem", "fontWeight": "700" }],
+                        "body-lead": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }],
+                        "display-lg": ["3.75rem", { "lineHeight": "4rem", "fontWeight": "700" }],
+                        "display-xl": ["4.5rem", { "lineHeight": "4.75rem", "fontWeight": "700" }],
+                        "headline-h5": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }],
+                        "headline-h1": ["3rem", { "lineHeight": "3.25rem", "fontWeight": "700" }],
+                        "body-base": ["1rem", { "lineHeight": "1.75rem", "fontWeight": "400" }],
+                        "caption": ["0.75rem", { "lineHeight": "1rem", "fontWeight": "400" }],
+                        "headline-h3": ["1.875rem", { "lineHeight": "2.25rem", "fontWeight": "700" }],
+                        "label-caps": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                        "headline-h4": ["1.5rem", { "lineHeight": "2rem", "fontWeight": "600" }],
+                        "body-sm": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "400" }],
+                        "scripture-quote": ["1.5rem", { "lineHeight": "2rem", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .hover-lift {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .ministry-card {
+            border-left: 3px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+        .ministry-card:hover {
+            border-left-color: var(--color-palette-a-gold);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-base antialiased">
+<!-- Top Navigation (From JSON) -->
+<nav class="bg-surface dark:bg-background flex justify-between items-center w-full px-space-8 py-space-4 max-w-7xl mx-auto docked full-width top-0 z-50 sticky shadow-sm">
+<div class="font-headline-h3 text-headline-h3 text-primary dark:text-primary-fixed-dim">
+            LFC-CFR Ministries
+        </div>
+<div class="hidden md:flex items-center gap-space-8">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-palette-a-gold transition-colors duration-200 scale-95 duration-150" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-palette-a-gold transition-colors duration-200 scale-95 duration-150" href="#">About</a>
+<a aria-current="page" class="text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-palette-a-gold pb-1 scale-95 duration-150" href="#">Ministries</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-palette-a-gold transition-colors duration-200 scale-95 duration-150" href="#">Outreach</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-palette-a-gold transition-colors duration-200 scale-95 duration-150" href="#">Media</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-palette-a-gold transition-colors duration-200 scale-95 duration-150" href="#">Contact</a>
+</div>
+<div class="hidden md:flex items-center gap-space-4">
+<button class="bg-palette-a-gold text-white font-label-caps text-label-caps px-space-8 py-space-3 rounded uppercase tracking-wider hover:bg-yellow-600 transition-colors">
+                Get Involved
+            </button>
+</div>
+</nav>
+<!-- Side Navigation (Mobile Fallback / Tablet - Hidden on Desktop as per design intent to prioritize canvas, but included structurally per rules) -->
+<aside class="hidden bg-surface dark:bg-background text-primary dark:text-primary-fixed-dim font-label-caps text-label-caps docked left-0 h-full w-64 shadow-md bg-surface-container dark:bg-surface-container-low transition-all duration-200">
+<!-- Content omitted for top nav priority on desktop -->
+</aside>
+<!-- Main Content Canvas -->
+<main>
+<!-- Hero Section -->
+<section class="relative h-[512px] min-h-[400px] flex items-center justify-center bg-primary overflow-hidden">
+<!-- Decorative overlay -->
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-black/30 to-primary/80"></div>
+<div class="relative z-10 text-center px-space-8 max-w-4xl mx-auto">
+<h1 class="font-headline-h1 text-headline-h1 text-on-primary mb-space-4">
+                    Our Outreach &amp; Ministries
+                </h1>
+<p class="font-body-lead text-body-lead text-inverse-primary max-w-2xl mx-auto">
+                    Extending the Kingdom beyond the walls of the church into every sphere of community life.
+                </p>
+</div>
+</section>
+<!-- Ministry Cards Grid -->
+<section class="py-space-24 px-space-8 max-w-7xl mx-auto bg-background">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-8">
+<!-- Card 1 -->
+<div class="ministry-card bg-surface border border-outline-variant rounded-lg p-space-6 hover-lift flex flex-col h-full">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-space-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<span class="font-label-caps text-label-caps text-palette-a-gold mb-space-2 block">MEN'S MINISTRY</span>
+<h3 class="font-headline-h3 text-headline-h3 text-on-surface mb-space-3">I AM the Storm</h3>
+<p class="font-body-base text-body-base text-on-surface-variant flex-grow mb-space-6">
+                        Equipping men to walk in their Kingdom authority, lead their families with conviction, and stand as pillars in the community against spiritual adversity.
+                    </p>
+<a class="font-label-caps text-label-caps text-palette-a-gold hover:text-yellow-700 transition-colors inline-flex items-center gap-1 mt-auto" href="#">
+                        LEARN MORE <span class="material-symbols-outlined text-[1rem]">arrow_forward</span>
+</a>
+</div>
+<!-- Card 2 -->
+<div class="ministry-card bg-surface border border-outline-variant rounded-lg p-space-6 hover-lift flex flex-col h-full">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-space-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">diamond</span>
+</div>
+<span class="font-label-caps text-label-caps text-palette-a-gold mb-space-2 block">WOMEN'S MINISTRY</span>
+<h3 class="font-headline-h3 text-headline-h3 text-on-surface mb-space-3">Ruby's Gems</h3>
+<p class="font-body-base text-body-base text-on-surface-variant flex-grow mb-space-6">
+                        Cultivating identity, strength, and grace rooted in Proverbs 31:10. We empower women to discover their priceless value in Christ.
+                    </p>
+<a class="font-label-caps text-label-caps text-palette-a-gold hover:text-yellow-700 transition-colors inline-flex items-center gap-1 mt-auto" href="#">
+                        LEARN MORE <span class="material-symbols-outlined text-[1rem]">arrow_forward</span>
+</a>
+</div>
+<!-- Card 3 -->
+<div class="ministry-card bg-surface border border-outline-variant rounded-lg p-space-6 hover-lift flex flex-col h-full">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-space-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<span class="font-label-caps text-label-caps text-palette-a-gold mb-space-2 block">FASTING MINISTRY</span>
+<h3 class="font-headline-h3 text-headline-h3 text-on-surface mb-space-3">7 Days Dead</h3>
+<p class="font-body-base text-body-base text-on-surface-variant flex-grow mb-space-6">
+                        A focused journey of consecration, denying the flesh to awaken the spirit. Experience breakthrough through intentional fasting and prayer.
+                    </p>
+<a class="font-label-caps text-label-caps text-palette-a-gold hover:text-yellow-700 transition-colors inline-flex items-center gap-1 mt-auto" href="#">
+                        LEARN MORE <span class="material-symbols-outlined text-[1rem]">arrow_forward</span>
+</a>
+</div>
+<!-- Card 4 -->
+<div class="ministry-card bg-surface border border-outline-variant rounded-lg p-space-6 hover-lift flex flex-col h-full">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-space-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">prayer_times</span>
+</div>
+<span class="font-label-caps text-label-caps text-palette-a-gold mb-space-2 block">INTERCESSION</span>
+<h3 class="font-headline-h3 text-headline-h3 text-on-surface mb-space-3">Wailing Wall Ministry</h3>
+<p class="font-body-base text-body-base text-on-surface-variant flex-grow mb-space-6">
+                        Standing in the gap for our families, city, and nation. Join our dedicated intercessors in fervent, unyielding prayer.
+                    </p>
+<a class="font-label-caps text-label-caps text-palette-a-gold hover:text-yellow-700 transition-colors inline-flex items-center gap-1 mt-auto" href="#">
+                        SUBMIT PRAYER <span class="material-symbols-outlined text-[1rem]">arrow_forward</span>
+</a>
+</div>
+<!-- Card 5 -->
+<div class="ministry-card bg-surface border border-outline-variant rounded-lg p-space-6 hover-lift flex flex-col h-full">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-space-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<span class="font-label-caps text-label-caps text-palette-a-gold mb-space-2 block">WHOLISTIC HEALTH</span>
+<h3 class="font-headline-h3 text-headline-h3 text-on-surface mb-space-3">Iaomai Wellness</h3>
+<p class="font-body-base text-body-base text-on-surface-variant flex-grow mb-space-6">
+                        From the Greek 'to heal', this ministry focuses on total restorationâbody, soul, and spiritâthrough wellness education and spiritual support.
+                    </p>
+<a class="font-label-caps text-label-caps text-palette-a-gold hover:text-yellow-700 transition-colors inline-flex items-center gap-1 mt-auto" href="#">
+                        LEARN MORE <span class="material-symbols-outlined text-[1rem]">arrow_forward</span>
+</a>
+</div>
+<!-- Card 6 -->
+<div class="ministry-card bg-surface border border-outline-variant rounded-lg p-space-6 hover-lift flex flex-col h-full">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-space-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">public</span>
+</div>
+<span class="font-label-caps text-label-caps text-palette-a-gold mb-space-2 block">MERCY MINISTRY</span>
+<h3 class="font-headline-h3 text-headline-h3 text-on-surface mb-space-3">Community Outreach</h3>
+<p class="font-body-base text-body-base text-on-surface-variant flex-grow mb-space-6">
+                        Demonstrating practical love and a Gospel witness to our neighbors through food drives, resource distribution, and active community service.
+                    </p>
+<a class="font-label-caps text-label-caps text-palette-a-gold hover:text-yellow-700 transition-colors inline-flex items-center gap-1 mt-auto" href="#">
+                        LEARN MORE <span class="material-symbols-outlined text-[1rem]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Impact Quote Section -->
+<section class="bg-primary text-on-primary py-space-24 px-space-8 text-center relative overflow-hidden">
+<div class="max-w-4xl mx-auto relative z-10">
+<blockquote class="font-scripture-quote text-scripture-quote mb-space-6 leading-relaxed">
+                    "The Kingdom of God is not just a Sunday experience - it is a daily transformation that reaches every broken place in our community."
+                </blockquote>
+<cite class="font-body-lead text-body-lead block not-italic opacity-80">
+                    - Archbishop Edgar Purnell
+                </cite>
+</div>
+<!-- Subtle background texture -->
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
+</section>
+<!-- CTA Section -->
+<section class="py-space-24 px-space-8 bg-surface text-center">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-headline-h2 text-headline-h2 text-on-surface mb-space-4">Get Involved</h2>
+<p class="font-body-lead text-body-lead text-on-surface-variant mb-space-8">
+                    There is a place for you in the Kingdom work. Contact us to learn how to serve.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-space-4">
+<button class="bg-palette-a-gold text-white font-label-caps text-label-caps px-space-8 py-space-4 rounded uppercase tracking-wider hover:bg-yellow-600 transition-colors">
+                        CONTACT US
+                    </button>
+<button class="bg-transparent border-2 border-primary text-primary font-label-caps text-label-caps px-space-8 py-space-4 rounded uppercase tracking-wider hover:bg-primary-fixed transition-colors">
+                        GIVE TO OUTREACH
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (From JSON) -->
+<footer class="bg-palette-c-navy dark:bg-palette-c-navy full-width bottom-0 w-full py-space-12 px-space-8 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto border-t border-slate-800">
+<div class="font-headline-h5 text-headline-h5 text-palette-b-champagne mb-space-6 md:mb-0">
+            LFC-CFR
+        </div>
+<div class="flex flex-wrap justify-center gap-space-6 mb-space-6 md:mb-0">
+<a class="font-caption text-caption text-on-surface-variant hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-caption text-caption text-on-surface-variant hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-caption text-caption text-on-surface-variant hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">Ministry Portal</a>
+<a class="font-caption text-caption text-on-surface-variant hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">Give Online</a>
+</div>
+<div class="font-caption text-caption text-palette-b-champagne opacity-80 text-center md:text-right">
+            Â© 2024 LFC-CFR Apostolic Ministry. All rights reserved. Built on Faith.
+        </div>
+</footer>
+</body></html>

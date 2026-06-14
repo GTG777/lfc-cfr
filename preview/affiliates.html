@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Affiliate Organizations - LFC-CFR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Lora:ital@1&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#1f1a22",
+                        "primary-fixed": "#f1dbff",
+                        "inverse-primary": "#dfb7ff",
+                        "secondary-fixed-dim": "#ffba46",
+                        "inverse-on-surface": "#f8edf9",
+                        "surface": "#fff7fe",
+                        "palette-b-champagne": "#B8963E",
+                        "on-surface-variant": "#4c4452",
+                        "tertiary-fixed": "#ffddbb",
+                        "on-primary-fixed-variant": "#661aa3",
+                        "on-primary": "#ffffff",
+                        "palette-b-crimson": "#7F1D1D",
+                        "primary-container": "#6b21a8",
+                        "tertiary-container": "#6d4100",
+                        "on-secondary": "#ffffff",
+                        "palette-a-gold": "#CA8A04",
+                        "on-primary-fixed": "#2d0050",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#4e2d00",
+                        "surface-container-high": "#efe5f1",
+                        "on-tertiary-fixed": "#2b1700",
+                        "secondary-fixed": "#ffddb0",
+                        "on-secondary-fixed": "#281800",
+                        "secondary-container": "#feb63c",
+                        "secondary": "#805600",
+                        "primary-fixed-dim": "#dfb7ff",
+                        "on-secondary-container": "#6e4900",
+                        "on-tertiary-container": "#eeaf68",
+                        "palette-d-gold": "#CA8A04",
+                        "surface-dim": "#e1d7e2",
+                        "palette-c-navy": "#0F172A",
+                        "on-secondary-fixed-variant": "#614000",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e9dfeb",
+                        "surface-bright": "#fff7fe",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#342e37",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#673d00",
+                        "surface-tint": "#803abd",
+                        "on-primary-container": "#d7a8ff",
+                        "primary": "#500088",
+                        "on-background": "#1f1a22",
+                        "palette-c-amber": "#D97706",
+                        "surface-container-low": "#fbf0fc",
+                        "tertiary-fixed-dim": "#faba72",
+                        "palette-d-emerald": "#14532D",
+                        "surface-container": "#f5ebf6",
+                        "palette-a-purple": "#6B21A8",
+                        "background": "#fff7fe",
+                        "outline": "#7e7383",
+                        "surface-container-highest": "#e9dfeb",
+                        "outline-variant": "#cfc2d4",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "space-20": "80px",
+                        "space-12": "48px",
+                        "space-1": "4px",
+                        "space-6": "24px",
+                        "space-4": "16px",
+                        "space-3": "12px",
+                        "space-24": "96px",
+                        "space-8": "32px",
+                        "space-32": "128px",
+                        "space-2": "8px",
+                        "space-16": "64px"
+                    },
+                    "fontFamily": {
+                        "display-xl": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-h4": ["Inter"],
+                        "scripture-quote": ["Lora"],
+                        "headline-h5": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-h2": ["Playfair Display"],
+                        "headline-h1": ["Playfair Display"],
+                        "body-base": ["Inter"],
+                        "body-lead": ["Inter"],
+                        "headline-h3": ["Playfair Display"],
+                        "caption": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-xl": ["4.5rem", {"lineHeight": "4.75rem", "fontWeight": "700"}],
+                        "display-lg": ["3.75rem", {"lineHeight": "4rem", "fontWeight": "700"}],
+                        "headline-h4": ["1.5rem", {"lineHeight": "2rem", "fontWeight": "600"}],
+                        "scripture-quote": ["1.5rem", {"lineHeight": "2rem", "fontWeight": "400"}],
+                        "headline-h5": ["1.25rem", {"lineHeight": "1.75rem", "fontWeight": "600"}],
+                        "label-caps": ["0.75rem", {"lineHeight": "1rem", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                        "body-sm": ["0.875rem", {"lineHeight": "1.25rem", "fontWeight": "400"}],
+                        "headline-h2": ["2.25rem", {"lineHeight": "2.5rem", "fontWeight": "700"}],
+                        "headline-h1": ["3rem", {"lineHeight": "3.25rem", "fontWeight": "700"}],
+                        "body-base": ["1rem", {"lineHeight": "1.75rem", "fontWeight": "400"}],
+                        "body-lead": ["1.125rem", {"lineHeight": "1.75rem", "fontWeight": "400"}],
+                        "headline-h3": ["1.875rem", {"lineHeight": "2.25rem", "fontWeight": "700"}],
+                        "caption": ["0.75rem", {"lineHeight": "1rem", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-overlay {
+            background-color: rgba(26, 10, 46, 0.85); /* Dark purple with texture/overlay */
+        }
+        .bg-purple-dark {
+            background-color: #1A0A2E;
+        }
+        .bg-purple-surface {
+            background-color: #2D1152;
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+        .ministry-card {
+            border-left: 3px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        .ministry-card:hover {
+            border-left-color: #CA8A04; /* palette-a-gold */
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-base antialiased">
+<!-- Top Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-space-8 md:px-space-16 h-20 bg-surface/95 backdrop-blur-md shadow-sm">
+<div class="font-headline-h3 text-headline-h3 text-primary font-bold">
+            LFC-CFR
+        </div>
+<div class="hidden md:flex space-x-space-6 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-base text-body-base uppercase tracking-wider hover:text-palette-a-gold transition-all duration-300" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-base text-body-base uppercase tracking-wider hover:text-palette-a-gold transition-all duration-300" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-base text-body-base uppercase tracking-wider hover:text-palette-a-gold transition-all duration-300" href="#">Ministries</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-base text-body-base uppercase tracking-wider hover:text-palette-a-gold transition-all duration-300" href="#">Events</a>
+<a class="text-primary border-b-2 border-palette-a-gold pb-1 font-bold font-body-base text-body-base uppercase tracking-wider hover:text-palette-a-gold transition-all duration-300" href="#">Affiliates</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-base text-body-base uppercase tracking-wider hover:text-palette-a-gold transition-all duration-300" href="#">Contact</a>
+</div>
+<button class="bg-palette-a-purple text-on-primary font-label-caps uppercase px-[32px] py-[14px] rounded hover:bg-opacity-90 transition-colors">
+            GIVE
+        </button>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[460px] min-h-[400px] flex items-center justify-center overflow-hidden bg-purple-dark">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1544465544-1b71aee9dfa3?q=80&amp;w=2874&amp;auto=format&amp;fit=crop')] bg-cover bg-center" data-alt="A dignified, abstract architectural shot of a grand, traditional cathedral interior or modern sanctuary featuring strong vertical lines, warm golden light streaming through stained glass or tall windows, casting dramatic but soft light into a dark, rich purple-toned, high-contrast, regal and welcoming atmosphere reflecting corporate and faith-grounded excellence.">
+<div class="absolute inset-0 hero-overlay"></div>
+</div>
+<div class="relative z-10 text-center px-space-4 max-w-4xl mx-auto flex flex-col items-center">
+<span class="material-symbols-outlined text-[64px] text-palette-a-gold mb-space-4" style="font-variation-settings: 'FILL' 0;">
+                    hub
+                </span>
+<h1 class="font-headline-h1 text-headline-h1 text-on-primary mb-space-4">Affiliate Organizations</h1>
+<p class="font-body-lead text-body-lead text-on-primary opacity-70 max-w-2xl mx-auto">
+                    A network of Kingdom-aligned ministries and organizations connected through shared vision and apostolic covering.
+                </p>
+</div>
+</section>
+<!-- Intro Section -->
+<section class="py-space-24 px-space-4 md:px-space-8 max-w-[800px] mx-auto text-center bg-surface-bright">
+<span class="font-label-caps text-label-caps text-palette-a-gold uppercase block mb-space-4">OUR NETWORK</span>
+<h2 class="font-headline-h2 text-headline-h2 text-on-surface mb-space-6">Stronger Together in Kingdom Purpose</h2>
+<p class="font-body-base text-body-base text-on-surface-variant">
+                LFC-CFR is blessed to be connected to a growing network of apostolic ministries and Kingdom-focused organizations. Each affiliate shares our core values of biblical integrity, community transformation, and Kingdom excellence.
+            </p>
+</section>
+<!-- Affiliate Cards Section -->
+<section class="py-space-16 px-space-4 md:px-space-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-8">
+<!-- Card 1 -->
+<div class="bg-surface rounded-lg p-space-8 border border-outline-variant shadow-sm card-hover ministry-card flex flex-col h-full">
+<div class="flex items-start justify-between mb-space-6">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">
+                                domain
+                            </span>
+</div>
+<span class="bg-palette-a-gold/10 text-palette-a-gold px-space-3 py-space-1 rounded-full font-label-caps text-label-caps border border-palette-a-gold/20">HEADQUARTERS</span>
+</div>
+<h3 class="font-headline-h3 text-headline-h3 text-on-surface mb-space-4">LFC Ministries HQ</h3>
+<p class="font-body-base text-body-base text-on-surface-variant mb-space-6 flex-grow">
+                        Serving as the central hub for our global network, providing apostolic oversight, comprehensive leadership training, and administrative support to ensure Kingdom excellence across all affiliated bodies.
+                    </p>
+<div class="mt-auto pt-space-6 border-t border-outline-variant flex justify-between items-center">
+<div class="flex flex-col text-sm text-on-surface-variant">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">location_on</span> Main Campus</span>
+</div>
+<button class="text-palette-a-gold font-label-caps uppercase border-2 border-palette-a-gold hover:bg-palette-a-gold hover:text-on-primary px-space-6 py-space-2 rounded transition-colors duration-300">
+                            LEARN MORE
+                        </button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface rounded-lg p-space-8 border border-outline-variant shadow-sm card-hover ministry-card flex flex-col h-full">
+<div class="flex items-start justify-between mb-space-6">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">
+                                public
+                            </span>
+</div>
+<span class="bg-palette-a-gold/10 text-palette-a-gold px-space-3 py-space-1 rounded-full font-label-caps text-label-caps border border-palette-a-gold/20">LAEN</span>
+</div>
+<h3 class="font-headline-h3 text-headline-h3 text-on-surface mb-space-4">LFC Apostolic Ecumenical Network</h3>
+<p class="font-body-base text-body-base text-on-surface-variant mb-space-6 flex-grow">
+                        A dynamic global fellowship fostering unity, collaboration, and shared resources across diverse denominations. We build bridges to advance the Kingdom through mutual support and strategic ecumenical partnership.
+                    </p>
+<div class="mt-auto pt-space-6 border-t border-outline-variant flex justify-between items-center">
+<div class="flex flex-col text-sm text-on-surface-variant">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">group</span> Global Network</span>
+</div>
+<button class="text-palette-a-gold font-label-caps uppercase border-2 border-palette-a-gold hover:bg-palette-a-gold hover:text-on-primary px-space-6 py-space-2 rounded transition-colors duration-300">
+                            LEARN MORE
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Partnership Section -->
+<section class="py-space-24 bg-purple-surface text-center px-space-4">
+<div class="max-w-5xl mx-auto">
+<span class="font-label-caps text-label-caps text-palette-a-gold uppercase block mb-space-4">KINGDOM PARTNERSHIP</span>
+<h2 class="font-headline-h2 text-headline-h2 text-on-primary mb-space-6">Join the Network</h2>
+<p class="font-body-lead text-body-lead text-on-primary/80 max-w-2xl mx-auto mb-space-12">
+                    Is your ministry or organization aligned with Kingdom values and apostolic mission? We invite you to explore partnership with the LFC network.
+                </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-8 mb-space-12 max-w-4xl mx-auto">
+<!-- Value 1 -->
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-primary-container/30 flex items-center justify-center mb-space-4 border border-palette-a-gold/30">
+<span class="material-symbols-outlined text-[32px] text-palette-a-gold" style="font-variation-settings: 'FILL' 1;">
+                                shield
+                            </span>
+</div>
+<h4 class="font-headline-h4 text-headline-h4 text-on-primary">Biblical Integrity</h4>
+</div>
+<!-- Value 2 -->
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-primary-container/30 flex items-center justify-center mb-space-4 border border-palette-a-gold/30">
+<span class="material-symbols-outlined text-[32px] text-palette-a-gold" style="font-variation-settings: 'FILL' 1;">
+                                favorite
+                            </span>
+</div>
+<h4 class="font-headline-h4 text-headline-h4 text-on-primary">Community Impact</h4>
+</div>
+<!-- Value 3 -->
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-primary-container/30 flex items-center justify-center mb-space-4 border border-palette-a-gold/30">
+<span class="material-symbols-outlined text-[32px] text-palette-a-gold" style="font-variation-settings: 'FILL' 1;">
+                                group
+                            </span>
+</div>
+<h4 class="font-headline-h4 text-headline-h4 text-on-primary">Collaborative Spirit</h4>
+</div>
+</div>
+<button class="bg-palette-a-gold text-on-primary font-label-caps uppercase px-[32px] py-[14px] rounded hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1">
+                    INQUIRE ABOUT PARTNERSHIP
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-palette-c-navy dark:bg-on-surface w-full py-space-16 px-space-8 md:px-space-32 grid grid-cols-1 md:grid-cols-4 gap-space-8 opacity-90 hover:opacity-100">
+<div>
+<div class="font-headline-h4 text-headline-h4 text-secondary-fixed mb-space-4">LFC-CFR</div>
+<p class="font-body-sm text-body-sm text-surface-variant">Â© 2024 LFC-CFR Apostolic Ministry. All Rights Reserved.</p>
+</div>
+<div>
+<h4 class="font-headline-h5 text-headline-h5 text-secondary-fixed mb-space-4">Quick Links</h4>
+<ul class="space-y-space-2">
+<li><a class="font-body-sm text-body-sm text-surface-variant hover:text-white hover:text-secondary-fixed transition-colors duration-200" href="#">Ministries</a></li>
+<li><a class="font-body-sm text-body-sm text-surface-variant hover:text-white hover:text-secondary-fixed transition-colors duration-200" href="#">Events</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline-h5 text-headline-h5 text-secondary-fixed mb-space-4">Network</h4>
+<ul class="space-y-space-2">
+<li><a class="font-body-sm text-body-sm text-secondary-fixed font-bold hover:text-secondary-fixed transition-colors duration-200" href="#">Affiliates</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline-h5 text-headline-h5 text-secondary-fixed mb-space-4">Legal</h4>
+<ul class="space-y-space-2">
+<li><a class="font-body-sm text-body-sm text-surface-variant hover:text-white hover:text-secondary-fixed transition-colors duration-200" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</footer>
+</body></html>

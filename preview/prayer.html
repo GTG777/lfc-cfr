@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wailing Wall Ministry - LFC-CFR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Lora:ital,wght@0,400;0,700;1,400&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .scripture-quote-border {
+            border-left-width: 3px;
+            border-style: solid;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "palette-d-emerald": "#14532D",
+                    "primary-fixed-dim": "#dfb7ff",
+                    "palette-c-navy": "#0F172A",
+                    "on-tertiary-fixed": "#2b1700",
+                    "surface": "#fff7fe",
+                    "palette-a-purple": "#6B21A8",
+                    "on-primary-fixed-variant": "#661aa3",
+                    "surface-container-highest": "#e9dfeb",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed": "#f1dbff",
+                    "primary-container": "#6b21a8",
+                    "on-surface": "#1f1a22",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#6d4100",
+                    "on-primary": "#ffffff",
+                    "secondary": "#805600",
+                    "inverse-primary": "#dfb7ff",
+                    "palette-b-champagne": "#B8963E",
+                    "inverse-surface": "#342e37",
+                    "on-tertiary-container": "#eeaf68",
+                    "on-secondary-fixed-variant": "#614000",
+                    "surface-variant": "#e9dfeb",
+                    "on-primary-fixed": "#2d0050",
+                    "error": "#ba1a1a",
+                    "background": "#fff7fe",
+                    "tertiary-fixed-dim": "#faba72",
+                    "inverse-on-surface": "#f8edf9",
+                    "tertiary": "#4e2d00",
+                    "surface-container-high": "#efe5f1",
+                    "palette-c-amber": "#D97706",
+                    "surface-tint": "#803abd",
+                    "palette-a-gold": "#CA8A04",
+                    "surface-dim": "#e1d7e2",
+                    "primary": "#500088",
+                    "on-surface-variant": "#4c4452",
+                    "on-secondary-fixed": "#281800",
+                    "secondary-container": "#feb63c",
+                    "on-primary-container": "#d7a8ff",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#fff7fe",
+                    "on-tertiary-fixed-variant": "#673d00",
+                    "secondary-fixed-dim": "#ffba46",
+                    "outline-variant": "#cfc2d4",
+                    "surface-container": "#f5ebf6",
+                    "surface-container-low": "#fbf0fc",
+                    "on-secondary-container": "#6e4900",
+                    "tertiary-fixed": "#ffddbb",
+                    "on-background": "#1f1a22",
+                    "on-error-container": "#93000a",
+                    "outline": "#7e7383",
+                    "palette-d-gold": "#CA8A04",
+                    "secondary-fixed": "#ffddb0",
+                    "palette-b-crimson": "#7F1D1D"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "space-6": "24px",
+                    "space-32": "128px",
+                    "space-12": "48px",
+                    "space-3": "12px",
+                    "space-1": "4px",
+                    "space-2": "8px",
+                    "space-20": "80px",
+                    "space-16": "64px",
+                    "space-24": "96px",
+                    "space-8": "32px",
+                    "space-4": "16px"
+            },
+            "fontFamily": {
+                    "display-xl": [
+                            "Playfair Display"
+                    ],
+                    "display-lg": [
+                            "Playfair Display"
+                    ],
+                    "scripture-quote": [
+                            "Lora"
+                    ],
+                    "body-base": [
+                            "Inter"
+                    ],
+                    "headline-h5": [
+                            "Inter"
+                    ],
+                    "body-lead": [
+                            "Inter"
+                    ],
+                    "headline-h2": [
+                            "Playfair Display"
+                    ],
+                    "headline-h1": [
+                            "Playfair Display"
+                    ],
+                    "body-sm": [
+                            "Inter"
+                    ],
+                    "headline-h4": [
+                            "Inter"
+                    ],
+                    "caption": [
+                            "Inter"
+                    ],
+                    "label-caps": [
+                            "Inter"
+                    ],
+                    "headline-h3": [
+                            "Playfair Display"
+                    ]
+            },
+            "fontSize": {
+                    "display-xl": [
+                            "4.5rem",
+                            {
+                                    "lineHeight": "4.75rem",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "display-lg": [
+                            "3.75rem",
+                            {
+                                    "lineHeight": "4rem",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "scripture-quote": [
+                            "1.5rem",
+                            {
+                                    "lineHeight": "2rem",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-base": [
+                            "1rem",
+                            {
+                                    "lineHeight": "1.75rem",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-h5": [
+                            "1.25rem",
+                            {
+                                    "lineHeight": "1.75rem",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lead": [
+                            "1.125rem",
+                            {
+                                    "lineHeight": "1.75rem",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-h2": [
+                            "2.25rem",
+                            {
+                                    "lineHeight": "2.5rem",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-h1": [
+                            "3rem",
+                            {
+                                    "lineHeight": "3.25rem",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-sm": [
+                            "0.875rem",
+                            {
+                                    "lineHeight": "1.25rem",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-h4": [
+                            "1.5rem",
+                            {
+                                    "lineHeight": "2rem",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "caption": [
+                            "0.75rem",
+                            {
+                                    "lineHeight": "1rem",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-caps": [
+                            "0.75rem",
+                            {
+                                    "lineHeight": "1rem",
+                                    "letterSpacing": "0.15em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-h3": [
+                            "1.875rem",
+                            {
+                                    "lineHeight": "2.25rem",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-base antialiased">
+<!-- Navigation -->
+<nav class="bg-surface dark:bg-palette-c-navy shadow-sm docked full-width top-0 z-50">
+<div class="flex justify-between items-center w-full px-space-6 md:px-space-12 py-space-4 max-w-7xl mx-auto">
+<a class="font-headline-h4 text-headline-h4 text-primary dark:text-primary-fixed-dim font-bold tracking-tight" href="#">LFC-CFR</a>
+<div class="hidden md:flex space-x-space-8 items-center">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-200 px-space-2 py-space-1 rounded" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-200 px-space-2 py-space-1 rounded" href="#">About</a>
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 font-bold hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-200 px-space-2 py-space-1 rounded" href="#">Ministries</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-200 px-space-2 py-space-1 rounded" href="#">Events</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-200 px-space-2 py-space-1 rounded" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary font-body-base text-body-base px-space-6 py-space-2 rounded font-bold uppercase tracking-widest scale-95 active:scale-90 transition-transform">GIVE</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative flex items-center justify-center min-h-[512px] bg-primary text-on-primary overflow-hidden">
+<div class="absolute inset-0 bg-black/40 z-10"></div>
+<div class="relative z-20 text-center px-space-6 flex flex-col items-center max-w-4xl mx-auto">
+<span class="material-symbols-outlined text-palette-a-gold text-6xl mb-space-6" data-icon="praying_hands" style="font-size: 64px;">playing_cards</span>
+<h1 class="font-headline-h1 text-headline-h1 text-on-primary mb-space-6">The Wailing Wall Ministry</h1>
+<div class="w-12 h-1 bg-palette-a-gold mb-space-6 mx-auto"></div>
+<p class="font-body-lead text-body-lead text-on-primary/70 mb-space-8 max-w-2xl mx-auto">Intercession is our calling. Bring your burden and let us stand with you.</p>
+<p class="font-scripture-quote text-scripture-quote text-palette-a-gold italic max-w-xl mx-auto">"Pray without ceasing." - 1 Thessalonians 5:17</p>
+</div>
+</header>
+<!-- About the Ministry -->
+<section class="py-space-24 px-space-6 bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-space-16 items-center">
+<div>
+<span class="font-label-caps text-label-caps text-palette-a-gold uppercase tracking-widest mb-space-4 block">ABOUT THE MINISTRY</span>
+<h2 class="font-headline-h2 text-headline-h2 text-primary mb-space-6">Standing in the Gap</h2>
+<p class="font-body-base text-body-base text-on-surface-variant mb-space-4">The Wailing Wall Ministry is the intercessory heart of LFC-CFR. Inspired by the ancient Wailing Wall in Jerusalem - a place of raw, earnest, persistent prayer - this ministry team stands before God on behalf of individuals, families, communities, and nations.</p>
+<p class="font-body-base text-body-base text-on-surface-variant mb-space-8">Our intercessors are trained, faithful, and committed to confidentiality. When you submit a prayer request, real people who love God will be praying specifically for you and your situation.</p>
+<div class="bg-surface-container-low p-space-6 rounded scripture-quote-border border-palette-a-gold">
+<p class="font-scripture-quote text-scripture-quote text-on-surface-variant italic">"I sought for a man among them who should build up the wall and stand in the gap before me for the land."</p>
+<p class="font-caption text-caption text-on-surface-variant mt-space-2">- Ezekiel 22:30</p>
+</div>
+</div>
+<div class="relative h-[600px] rounded-xl overflow-hidden shadow-lg border border-outline-variant bg-palette-c-navy flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary/10 text-[200px]" data-icon="church" style="font-size: 200px;">church</span>
+</div>
+</div>
+</section>
+<!-- Prayer Request Form -->
+<section class="py-space-24 px-space-6 bg-surface-container">
+<div class="max-w-3xl mx-auto text-center mb-space-12">
+<span class="font-label-caps text-label-caps text-palette-a-gold uppercase tracking-widest block mb-space-2">SUBMIT YOUR REQUEST</span>
+<h2 class="font-headline-h2 text-headline-h2 text-primary mb-space-4">We Are Believing With You</h2>
+<p class="font-body-base text-body-base text-on-surface-variant">Complete the form below. Your request will be received by our intercessory team with prayer and confidentiality.</p>
+</div>
+<div class="max-w-2xl mx-auto bg-surface p-space-8 md:p-space-12 rounded-xl shadow-lg border border-outline-variant transition-transform hover:-translate-y-1 duration-300">
+<form class="space-y-space-6">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-space-2" for="name">Name or Initials *</label>
+<input class="w-full bg-surface-container-lowest border border-outline text-on-surface rounded focus:ring-2 focus:ring-primary focus:border-primary p-space-3 font-body-base text-body-base" id="name" name="name" placeholder="How should we address you in prayer?" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-space-2" for="email">Email (Optional)</label>
+<input class="w-full bg-surface-container-lowest border border-outline text-on-surface rounded focus:ring-2 focus:ring-primary focus:border-primary p-space-3 font-body-base text-body-base" id="email" name="email" placeholder="For a prayer confirmation" type="email"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-space-2" for="prayer_request">Prayer Request *</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline text-on-surface rounded focus:ring-2 focus:ring-primary focus:border-primary p-space-3 font-body-base text-body-base resize-y" id="prayer_request" name="prayer_request" placeholder="Share your need. Be as specific or general as you like." required="" rows="5"></textarea>
+</div>
+<div class="flex items-start">
+<div class="flex items-center h-5">
+<input class="w-4 h-4 text-primary bg-surface-container-lowest border-outline rounded focus:ring-primary focus:ring-2" id="confidential" name="confidential" type="checkbox"/>
+</div>
+<div class="ml-space-3 text-sm">
+<label class="font-body-base text-body-base text-on-surface-variant" for="confidential">I would like to keep this request confidential</label>
+</div>
+</div>
+<button class="w-full bg-palette-a-gold text-on-primary font-body-base text-body-base font-bold py-space-4 px-space-6 rounded uppercase tracking-widest hover:bg-palette-d-gold transition-colors duration-200" type="submit">
+                    SUBMIT PRAYER REQUEST
+                </button>
+<p class="font-caption text-caption text-center text-on-surface-variant mt-space-4">Your request is handled with complete confidentiality and compassion.</p>
+</form>
+</div>
+</section>
+<!-- Intercession Promise Section -->
+<section class="py-space-24 px-space-6 bg-[#1A0A2E] text-on-primary text-center">
+<div class="max-w-5xl mx-auto">
+<h2 class="font-headline-h2 text-headline-h2 mb-space-16 text-on-primary">Our Commitment to You</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-12">
+<div class="flex flex-col items-center p-space-6">
+<div class="w-16 h-16 rounded-full bg-surface-container/10 flex items-center justify-center mb-space-6">
+<span class="material-symbols-outlined text-palette-a-gold text-4xl" data-icon="shield">shield</span>
+</div>
+<h3 class="font-headline-h4 text-headline-h4 text-on-primary mb-space-3">Confidential</h3>
+<p class="font-body-base text-body-base text-on-primary/80">Your request stays within our prayer team</p>
+</div>
+<div class="flex flex-col items-center p-space-6">
+<div class="w-16 h-16 rounded-full bg-surface-container/10 flex items-center justify-center mb-space-6">
+<span class="material-symbols-outlined text-palette-a-gold text-4xl" data-icon="schedule">schedule</span>
+</div>
+<h3 class="font-headline-h4 text-headline-h4 text-on-primary mb-space-3">Faithful</h3>
+<p class="font-body-base text-body-base text-on-primary/80">We pray immediately upon receiving your request</p>
+</div>
+<div class="flex flex-col items-center p-space-6">
+<div class="w-16 h-16 rounded-full bg-surface-container/10 flex items-center justify-center mb-space-6">
+<span class="material-symbols-outlined text-palette-a-gold text-4xl" data-icon="favorite">favorite</span>
+</div>
+<h3 class="font-headline-h4 text-headline-h4 text-on-primary mb-space-3">Compassionate</h3>
+<p class="font-body-base text-body-base text-on-primary/80">Every request is treated with love and dignity</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-palette-a-purple dark:bg-palette-c-navy text-on-primary dark:text-primary-fixed full-width bottom-0 z-40">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-8 w-full px-space-6 md:px-space-32 py-space-16 max-w-7xl mx-auto">
+<div>
+<a class="font-headline-h5 text-headline-h5 text-on-primary block mb-space-4" href="#">LFC-CFR</a>
+<p class="font-body-sm text-body-sm text-on-primary/80">Â© 2024 Labourers For Christ Center For Reconstruction. All rights reserved.</p>
+</div>
+<div>
+<h4 class="font-headline-h5 text-headline-h5 text-on-primary mb-space-4">Quick Links</h4>
+<ul class="space-y-space-2">
+<li><a class="font-body-sm text-body-sm text-on-primary dark:text-on-surface-variant hover:text-secondary-container transition-colors hover:opacity-80 focus:ring-2 focus:ring-secondary-container" href="#">About Us</a></li>
+<li><a class="font-body-sm text-body-sm text-on-primary dark:text-on-surface-variant hover:text-secondary-container transition-colors hover:opacity-80 focus:ring-2 focus:ring-secondary-container" href="#">Ministries</a></li>
+<li><a class="font-body-sm text-body-sm text-on-primary dark:text-on-surface-variant hover:text-secondary-container transition-colors hover:opacity-80 focus:ring-2 focus:ring-secondary-container" href="#">Upcoming Events</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline-h5 text-headline-h5 text-on-primary mb-space-4">Connect</h4>
+<ul class="space-y-space-2">
+<li><a class="font-body-sm text-body-sm text-on-primary dark:text-on-surface-variant hover:text-secondary-container transition-colors hover:opacity-80 focus:ring-2 focus:ring-secondary-container" href="#">Giving</a></li>
+<li><a class="font-body-sm text-body-sm text-on-primary dark:text-on-surface-variant hover:text-secondary-container transition-colors hover:opacity-80 focus:ring-2 focus:ring-secondary-container" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline-h5 text-headline-h5 text-on-primary mb-space-4">Legal</h4>
+<ul class="space-y-space-2">
+<li><a class="font-body-sm text-body-sm text-on-primary dark:text-on-surface-variant hover:text-secondary-container transition-colors hover:opacity-80 focus:ring-2 focus:ring-secondary-container" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>
